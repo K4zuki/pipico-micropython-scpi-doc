@@ -29,15 +29,13 @@ jobs:
           make initdir html
           RELEASE_VERSION=${GITHUB_REF#refs/*/}
           DOWNLOAD_URL_BASE=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download
-          TARGET=`ls doc/Out/*.html`
-          TARGET=${TARGET#doc/Out/}
-          qr ${DOWNLOAD_URL_BASE}/${RELEASE_VERSION}/${TARGET//.html/}.pdf > doc/images/QRcode.png
+          TARGET=`ls Out/*.html`
+          TARGET=${TARGET#Out/}
+          qr ${DOWNLOAD_URL_BASE}/${RELEASE_VERSION}/${TARGET//.html/}.pdf > images/QRcode.png
       - name: Build document
         run: |
-          make initdir html docx pdf apidoc
+          make initdir docx
       - name: Upload artifact files (at a push)
         uses: actions/upload-artifact@v3
         with:
-          path: |
-            doc/Out
-            micropython/doc/Out
+          path: Out

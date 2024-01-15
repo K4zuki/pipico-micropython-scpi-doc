@@ -1,40 +1,24 @@
-all: html
+ifeq ($(OS),Windows_NT)
+HOME = C:/Users/$(USERNAME)
+endif
+PIPBASE= $(shell get-pip-base)
+PANSTYLES= $(PIPBASE)/var
+MISC= $(PANSTYLES)/pandoc_misc
+MISC_SYS = $(MISC)/system
+MISC_USER = $(MISC)/user
+include $(MISC_SYS)/Makefile.in
+PROJECT= `pwd`
 
-html:
-	cd doc && make html && cd -
-
-pdf:
-	cd doc && make pdf && cd -
-
-docx:
-	cd doc && make docx && cd -
-
-clean:
-	cd doc && make clean && cd -
-	cd micropython/doc && make clean
-
-init:
-	cd doc && make init && cd -
-	cd micropython/doc && make init
-
-initdir:
-	cd doc && make initdir && cd -
-	cd micropython/doc && make initdir
-
-apidoc: apidoc-docx
-
-apidoc-html:
-	cd micropython/doc && make html && cd -
-
-apidoc-pdf:
-	cd micropython/doc && make pdf && cd -
-
-apidoc-docx:
-	cd micropython/doc && make docx && cd -
-
-docker:
-	docker build -t rpi-pico-build .
-
-firmware:
-	cd micropython && \
-	docker run --rm -it -v $(PWD)/micropython:/root rpi-pico-build bash /root/firmware_builder.sh
+## userland: uncomment and replace
+#MDDIR := markdown
+#DATADIR := data
+#TARGETDIR := Out
+#IMAGEDIR := images
+#CONFIG := config.yaml
+#INPUT := TITLE.md
+SYSTEM_DOCXFRONTPAGE := $(MDDIR)/frontpage.md
+TARGET := RasPiPico-Micro-SCPI-API-Reference-$(DATE)-$(HASH)
+#REVERSE_INPUT := reverse-input.docx
+REFERENCE := ./local_reference.docx
+##
+include $(MISC_SYS)/Makefile
