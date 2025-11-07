@@ -20,5 +20,8 @@ SYSTEM_DOCXFRONTPAGE := $(MDDIR)/frontpage.md
 TARGET := RasPiPico-Micro-SCPI-API-Reference-$(DATE)-$(HASH)
 #REVERSE_INPUT := reverse-input.docx
 REFERENCE := ./local_reference.docx
+HTML_TEMPLATE := ./easy_template.html
+#HTML_CSS := -M css=https://raw.githubusercontent.com/rtfd/sphinx_rtd_theme/master/sphinx_rtd_theme/static/css/theme.css
+
 ##
 include $(MISC_SYS)/Makefile
