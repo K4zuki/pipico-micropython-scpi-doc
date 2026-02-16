@@ -30,13 +30,18 @@ Shallow clone is recommended as it includes binary files.
 
 ##### Simple way of installation - typical Micropython method {-}
 
-Write official Micropython uf2 firmware, and put [main.py]{custom-style="PreprocessorTok"},
-[MicroScpiDevice.py]{custom-style="PreprocessorTok"} and [RaspberryScpiPico.py]{custom-style="PreprocessorTok"}
-on root of target directory.
+Write official Micropython uf2 firmware (version 1.26), and put following files on root of target virtual filesystem directory.
+
+- [MicroScpiDevice.py]{custom-style="PreprocessorTok"}
+- [RaspberryScpiPico.py]{custom-style="PreprocessorTok"}
+- [Usb488ScpiPico.py]{custom-style="PreprocessorTok"}
+- [main.py]{custom-style="PreprocessorTok"},
+- [tmc.py]{custom-style="PreprocessorTok"}
+- [usb488.py]{custom-style="PreprocessorTok"}
 
 ##### Complicated way - build custom UF2 firmware {-}
 
-Install Docker on your PC and run [make docker]{custom-style="PreprocessorTok"} and
+Install Docker on your PC[^winpc-and-intelmac] and run [make docker]{custom-style="PreprocessorTok"} and
 [make firmware]{custom-style="PreprocessorTok"} to build docker image and uf2 firmware respectively
 (firmware build requires docker image).
 This builds [pipco-micropython-scpi.uf2]{custom-style="PreprocessorTok"} firmeare in build directory.
@@ -45,6 +50,9 @@ WSL is recommended to use [make]{custom-style="PreprocessorTok"} on Windows i.e.
 [wsl.exe make docker]{custom-style="PreprocessorTok"} and [wsl.exe make firmware]{custom-style="PreprocessorTok"}.
 
 For any question, create an issue on github repo.
+
+[^winpc-and-intelmac]: Tested with Windows PCs and Intel Mac environment only.
+Either docker build or compile may fail with A1/2/3 chipset Mac and Linux.
 
 #### Pico pinout {-}
 
