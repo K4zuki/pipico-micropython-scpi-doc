@@ -263,6 +263,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
     | -224 | Illegal parameter value     |
     | -333 | I2C bus error               |
     | -334 | SPI bus error               |
+    | -481 | Parser failure              |
+    | -482 | No response on last bulkout |
+    | -483 | No response stock left      |
 
     </div>
 
