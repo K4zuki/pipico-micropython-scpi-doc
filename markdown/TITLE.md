@@ -180,10 +180,11 @@ This data type has an implied message terminator.
 
 #### Syntax {-}
 
-[MACHINE:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[MACHINE:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets Pico's CPU clock frequency in Hz.
-[\<frequency\>]{custom-style="PreprocessorTok"} must be between 100MHz and 275MHz inclusive.
+[\<frequency\>]{custom-style="PreprocessorTok"} must be between 100MHz and 264MHz inclusive.
+Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -200,15 +201,27 @@ This data type has an implied message terminator.
 
 :::{custom-style="Definition Term"}
 `MACHINE:FREQ 250e6` [// CPU is overclocking at 250MHz]{custom-style="CommentTok"}
+`MACHINE:FREQ DEF` [// CPU runs at default clock (125MHz)]{custom-style="CommentTok"}
 :::
 
 ## MACHINE:FREQuency? {.unnumbered #machine-frequency-query}
 
 #### Syntax {-}
 
-[MACHINE:FREQuency?]{custom-style="ControlFlowTok"}
+[MACHINE:FREQuency? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns Pico's CPU clock frequency in Hz.
+Also returns minimum, default and maximum frequency when keyword parameter applied.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item | Type                                    | Range of values                                         |
+|------|-----------------------------------------|---------------------------------------------------------|
+|      | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
+
+</div>
 
 #### Returned Query Format {-}
 
@@ -216,9 +229,13 @@ This data type has an implied message terminator.
 
 #### Example {-}
 
-`MACHINE:FREQ?` [// Returns frequency in Hz]{custom-style="CommentTok"}
+`MACHINE:FREQ?` [// Returns current running frequency in Hz]{custom-style="CommentTok"}
 
-:   Typical Response: [125000000]{custom-style="StringTok"}
+:   Typical Response: [125_000_000]{custom-style="StringTok"}
+
+`MACHINE:FREQ? MAX` [// Returns maximum frequency in Hz]{custom-style="CommentTok"}
+
+:   Typical Response: [264_000_000]{custom-style="StringTok"}
 
 # SYSTEM Subsystem {.subsection-toc}
 
