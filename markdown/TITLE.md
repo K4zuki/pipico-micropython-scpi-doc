@@ -81,28 +81,28 @@ Table: API unavailable or special functioned GPIO pins {#tbl:special-functions}
 
 Table: Raspberry Pi Pico pinout and function assignment {#tbl:pico-pinout}
 
-|                                         Pico<br>Function | RP2040<br>GPIO# | Pico<br>Pin | Pico<br>Pin | RP2040<br>GPIO# | Pico<br>Function                                         |
-|---------------------------------------------------------:|:---------------:|:-----------:|:-----------:|:---------------:|:---------------------------------------------------------|
-|                                       No error indicator |        0        |      1      |     40      |                 | [VBUS]{custom-style="PowerPinStyle"}                     |
-|                                          Error indicator |        1        |      2      |     39      |                 | [VSYS]{custom-style="PowerPinStyle"}                     |
-|                     [GND]{custom-style="GroundPinStyle"} |                 |      3      |     38      |                 | [GND]{custom-style="GroundPinStyle"}                     |
-| [[SPI0 SCK]{custom-style="SPIPinStyle"}](#spi-subsystem) |        2        |      4      |     37      |                 | 3V3 EN                                                   |
-|  [[SPI0 TX]{custom-style="SPIPinStyle"}](#spi-subsystem) |        3        |      5      |     36      |                 | 3V3 OUT                                                  |
-|  [[SPI0 RX]{custom-style="SPIPinStyle"}](#spi-subsystem) |        4        |      6      |     35      |                 | [[ADC VREF]{custom-style="ADCPinStyle"}](#adc-subsystem) |
-|  [[SPI0 CS]{custom-style="SPIPinStyle"}](#spi-subsystem) |        5        |      7      |     34      |       28        | [[ADC2]{custom-style="ADCPinStyle"}](#adc-subsystem)     |
-|                     [GND]{custom-style="GroundPinStyle"} |                 |      8      |     33      |                 | [[ADC GND]{custom-style="ADCPinStyle"}](#adc-subsystem)  |
-| [[I2C1 SDA]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        6        |      9      |     32      |       27        | [[ADC1]{custom-style="ADCPinStyle"}](#adc-subsystem)     |
-| [[I2C1 SCL]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        7        |     10      |     31      |       26        | [[ADC0]{custom-style="ADCPinStyle"}](#adc-subsystem)     |
-| [[I2C0 SDA]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        8        |     11      |     30      |                 | RUN                                                      |
-| [[I2C0 SCL]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        9        |     12      |     29      |       22        | [[PIN 22]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|                     [GND]{custom-style="GroundPinStyle"} |                 |     13      |     28      |                 | [GND]{custom-style="GroundPinStyle"}                     |
-| [[SPI1 SCK]{custom-style="SPIPinStyle"}](#spi-subsystem) |       10        |     14      |     27      |       21        | [[PIN 21]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|  [[SPI1 TX]{custom-style="SPIPinStyle"}](#spi-subsystem) |       11        |     15      |     26      |       20        | [[PIN 20]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|  [[SPI1 RX]{custom-style="SPIPinStyle"}](#spi-subsystem) |       12        |     16      |     25      |       19        | [[PIN 19]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|  [[SPI1 CS]{custom-style="SPIPinStyle"}](#spi-subsystem) |       13        |     17      |     24      |       18        | [[PIN 18]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|                     [GND]{custom-style="GroundPinStyle"} |                 |     18      |     23      |                 | [GND]{custom-style="GroundPinStyle"}                     |
-|  [[PIN 14]{custom-style="GPIOPinStyle"}](#pin-subsystem) |       14        |     19      |     22      |       17        | [[PIN 17]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
-|  [[PIN 15]{custom-style="GPIOPinStyle"}](#pin-subsystem) |       15        |     20      |     21      |       16        | [[PIN 16]{custom-style="GPIOPinStyle"}](#pin-subsystem)  |
+|                                                                                                 Pico<br>Function | RP2040<br>GPIO# | Pico<br>Pin | Pico<br>Pin | RP2040<br>GPIO# | Pico<br>Function                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------:|:---------------:|:-----------:|:-----------:|:---------------:|:-----------------------------------------------------------------------------------------------------------------|
+|                                                                                               No error indicator |        0        |      1      |     40      |                 | [VBUS]{custom-style="PowerPinStyle"}                                                                             |
+|                                                                                                  Error indicator |        1        |      2      |     39      |                 | [VSYS]{custom-style="PowerPinStyle"}                                                                             |
+|                                                                             [GND]{custom-style="GroundPinStyle"} |                 |      3      |     38      |                 | [GND]{custom-style="GroundPinStyle"}                                                                             |
+|                                                         [[SPI0 SCK]{custom-style="SPIPinStyle"}](#spi-subsystem) |        2        |      4      |     37      |                 | 3V3 EN                                                                                                           |
+|                                                   [[SPI0 TX (MOSI)]{custom-style="SPIPinStyle"}](#spi-subsystem) |        3        |      5      |     36      |                 | 3V3 OUT                                                                                                          |
+|                                                   [[SPI0 RX (MISO)]{custom-style="SPIPinStyle"}](#spi-subsystem) |        4        |      6      |     35      |                 | [[ADC VREF]{custom-style="ADCPinStyle"}](#adc-subsystem)                                                         |
+|                                                          [[SPI0 CS]{custom-style="SPIPinStyle"}](#spi-subsystem) |        5        |      7      |     34      |       28        | [[ADC2]{custom-style="ADCPinStyle"}](#adc-subsystem)                                                             |
+|                                                                             [GND]{custom-style="GroundPinStyle"} |                 |      8      |     33      |                 | [[ADC GND]{custom-style="ADCPinStyle"}](#adc-subsystem)                                                          |
+|                                                         [[I2C1 SDA]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        6        |      9      |     32      |       27        | [[ADC1]{custom-style="ADCPinStyle"}](#adc-subsystem)                                                             |
+|                                                         [[I2C1 SCL]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        7        |     10      |     31      |       26        | [[ADC0]{custom-style="ADCPinStyle"}](#adc-subsystem)                                                             |
+|                                                         [[I2C0 SDA]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        8        |     11      |     30      |                 | RUN                                                                                                              |
+|                                                         [[I2C0 SCL]{custom-style="I2CPinStyle"}](#i2c-subsystem) |        9        |     12      |     29      |       22        | [[PIN 22]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 22]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+|                                                                             [GND]{custom-style="GroundPinStyle"} |                 |     13      |     28      |                 | [GND]{custom-style="GroundPinStyle"}                                                                             |
+|                                                         [[SPI1 SCK]{custom-style="SPIPinStyle"}](#spi-subsystem) |       10        |     14      |     27      |       21        | [[PIN 21]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 21]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+|                                                   [[SPI1 TX (MOSI)]{custom-style="SPIPinStyle"}](#spi-subsystem) |       11        |     15      |     26      |       20        | [[PIN 20]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 20]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+|                                                   [[SPI1 RX (MISO)]{custom-style="SPIPinStyle"}](#spi-subsystem) |       12        |     16      |     25      |       19        | [[PIN 19]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 19]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+|                                                          [[SPI1 CS]{custom-style="SPIPinStyle"}](#spi-subsystem) |       13        |     17      |     24      |       18        | [[PIN 18]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 18]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+|                                                                             [GND]{custom-style="GroundPinStyle"} |                 |     18      |     23      |                 | [GND]{custom-style="GroundPinStyle"}                                                                             |
+| [[PIN 14]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 14]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |       14        |     19      |     22      |       17        | [[PIN 17]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 17]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
+| [[PIN 15]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 15]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |       15        |     20      |     21      |       16        | [[PIN 16]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 16]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
 
 </div>
 
@@ -267,7 +267,7 @@ This data type has an implied message terminator.
 
 [PIN?]{custom-style="ControlFlowTok"}
 
-:   This query returns status of all available pins (mode, value, PWM frequency, PWM duty).
+:   This query returns status of all available pins (mode, value).
 
 #### Returned Query Format {-}
 
@@ -278,16 +278,16 @@ This data type has an implied message terminator.
 `PIN?` [// Returns entire Pin status]{custom-style="CommentTok"}
 
 :   Typical Response: <br>[
-PIN14:MODE IN;PIN14:VALue OFF;PIN14:PWM:FREQuency 1000;PIN14:PWM:DUTY 32768;
-PIN15:MODE IN;PIN15:VALue OFF;PIN15:PWM:FREQuency 1000;PIN15:PWM:DUTY 32768;
-PIN16:MODE IN;PIN16:VALue OFF;PIN16:PWM:FREQuency 1000;PIN16:PWM:DUTY 32768;
-PIN17:MODE IN;PIN17:VALue OFF;PIN17:PWM:FREQuency 1000;PIN17:PWM:DUTY 32768;
-PIN18:MODE IN;PIN18:VALue OFF;PIN18:PWM:FREQuency 1000;PIN18:PWM:DUTY 32768;
-PIN19:MODE IN;PIN19:VALue OFF;PIN19:PWM:FREQuency 1000;PIN19:PWM:DUTY 32768;
-PIN20:MODE IN;PIN20:VALue OFF;PIN20:PWM:FREQuency 1000;PIN20:PWM:DUTY 32768;
-PIN21:MODE IN;PIN21:VALue OFF;PIN21:PWM:FREQuency 1000;PIN21:PWM:DUTY 32768;
-PIN22:MODE IN;PIN22:VALue OFF;PIN22:PWM:FREQuency 1000;PIN22:PWM:DUTY 32768;
-PIN25:MODE IN;PIN25:VALue OFF;PIN25:PWM:FREQuency 1000;PIN25:PWM:DUTY 32768;]{custom-style="StringTok"}
+PIN14:MODE IN;PIN14:VALue OFF;
+PIN15:MODE IN;PIN15:VALue OFF;
+PIN16:MODE IN;PIN16:VALue OFF;
+PIN17:MODE IN;PIN17:VALue OFF;
+PIN18:MODE IN;PIN18:VALue OFF;
+PIN19:MODE IN;PIN19:VALue OFF;
+PIN20:MODE IN;PIN20:VALue OFF;
+PIN21:MODE IN;PIN21:VALue OFF;
+PIN22:MODE IN;PIN22:VALue OFF;
+PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 
 ## PIN:MODE {.unnumbered #pin-mode}
 
@@ -447,11 +447,41 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 `PIN14:OFF` [// Sets Pin14 to logic LO]{custom-style="CommentTok"} \
 :::
 
-## PIN:PWM:FREQuency {.unnumbered #pin-pwm-frequency}
+# PWM Subsystem {.subsection-toc}
+
+## PWM? {.unnumbered #pwm-query}
 
 #### Syntax {-}
 
-[PIN\<pin\>:PWM:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[PIN?]{custom-style="ControlFlowTok"}
+
+:   This query returns status of all available pins (mode, value).
+
+#### Returned Query Format {-}
+
+[[\<CRD\>]{custom-style="NormalTok"}](#crd)
+
+#### Example {-}
+
+`PIN?` [// Returns entire Pin status]{custom-style="CommentTok"}
+
+:   Typical Response: <br>[
+PWM14:FREQuency 1000;PWM14:DUTY 32768;
+PWM15:FREQuency 1000;PWM15:DUTY 32768;
+PWM16:FREQuency 1000;PWM16:DUTY 32768;
+PWM17:FREQuency 1000;PWM17:DUTY 32768;
+PWM18:FREQuency 1000;PWM18:DUTY 32768;
+PWM19:FREQuency 1000;PWM19:DUTY 32768;
+PWM20:FREQuency 1000;PWM20:DUTY 32768;
+PWM21:FREQuency 1000;PWM21:DUTY 32768;
+PWM22:FREQuency 1000;PWM22:DUTY 32768;
+PWM25:FREQuency 1000;PWM25:DUTY 32768;]{custom-style="StringTok"}
+
+## PWM:FREQuency {.unnumbered #pwm-frequency}
+
+#### Syntax {-}
+
+[PWM\<pin\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM frequency of specified IO pin in Hz.
 
@@ -472,11 +502,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 `PIN14:PWM:FREQ 55555` [// Pin14 PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
 :::
 
-## PIN:PWM:FREQuency? {.unnumbered #pin-pwm-frequency-query}
+## PWM:FREQuency? {.unnumbered #pwm-frequency-query}
 
 #### Syntax {-}
 
-[PIN\<pin\>:PWM:FREQuency?]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:FREQuency?]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM frequency of specified IO pin in Hz.
 
@@ -500,11 +530,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 :   Typical Response: [500000]{custom-style="StringTok"}
 
-## PIN:PWM:DUTY {.unnumbered #pin-pwm-duty}
+## PWM:DUTY {.unnumbered #pwm-duty}
 
 #### Syntax {-}
 
-[PIN\<pin\>:PWM:DUTY \<duty\>]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:DUTY \<duty\>]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM duty of specified IO pin in range of 1 to 65535.
 
@@ -525,11 +555,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 `PIN14:PWM:DUTY 25252` [// Pin14 PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
 :::
 
-## PIN:PWM:DUTY? {.unnumbered #pin-pwm-duty-query}
+## PWM:DUTY? {.unnumbered #pwm-duty-query}
 
 #### Syntax {-}
 
-[PIN\<pin\>:PWM:DUTY?]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:DUTY?]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM duty of specified IO pin in range of 1 to 65535
 
@@ -552,6 +582,54 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 `PIN14:PWM:DUTY?` [// Returns Pin14 PWM duty in integer]{custom-style="CommentTok"}
 
 :   Typical Response: [32768]{custom-style="StringTok"}
+
+## PWM:ON {.unnumbered #pwm-on}
+
+#### Syntax {-}
+
+[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
+
+:   This command sets logical value of specified IO pin to logic HI.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+
+</div>
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`PIN14:ON` [// Sets Pin14 to logic HI]{custom-style="CommentTok"} \
+:::
+
+## PWM:OFF {.unnumbered #pwm-off}
+
+#### Syntax {-}
+
+[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
+
+:   This command sets logical value of specified IO pin to logic LO.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+
+</div>
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`PIN14:OFF` [// Sets Pin14 to logic LO]{custom-style="CommentTok"} \
+:::
 
 # LED Subsystem {.subsection-toc}
 
