@@ -187,11 +187,12 @@ This data type has an implied message terminator.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Range of values                                                                       | Default |
-|-------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------------|:-------:|
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [100_000_000]{custom-style="NormalTok"} to<br>[275_000_000]{custom-style="NormalTok"} |   N/A   |
+| Item                                      | Type                                    | Range of values                                                                    |
+|-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------|
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [100_000_000]{custom-style="NormalTok"} to [264_000_000]{custom-style="NormalTok"} |
+|                                           | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                            |
 
 </div>
 
@@ -298,12 +299,12 @@ PIN25:MODE IN;PIN25:VALue OFF;PIN25:PWM:FREQuency 1000;PIN25:PWM:DUTY 32768;]{cu
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                        | Default |
-|--------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
-| [\<mode\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [INput/OUTput/ODrain/PWM]{custom-style="NormalTok"}           |   N/A   |
+| Item                                 | Type                                    | Values                                                      |
+|--------------------------------------|-----------------------------------------|-------------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}   |
+| [\<mode\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [INput/OUTput/ODrain/PWM/DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -323,11 +324,11 @@ PIN25:MODE IN;PIN25:VALue OFF;PIN25:PWM:FREQuency 1000;PIN25:PWM:DUTY 32768;]{cu
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -353,12 +354,12 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values                                                        | Default |
-|---------------------------------------|-------------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |                                                               |   N/A   |
+| Item                                  | Type                                      | Values                                                    |
+|---------------------------------------|-------------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |                                                           |
 
 </div>
 
@@ -380,11 +381,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -408,11 +409,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -432,11 +433,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -456,12 +457,12 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Values                                                                  | Default |
-|-------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"}           |   N/A   |
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |   N/A   |
+| Item                                      | Type                                    | Values                                                                   |
+|-------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}                |
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1_000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
 
 </div>
 
@@ -481,11 +482,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -509,12 +510,12 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                             | Default |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"}      |   N/A   |
-| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |   N/A   |
+| Item                                 | Type                                    | Values                                                             |
+|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}          |
+| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
 
 </div>
 
@@ -534,11 +535,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                        | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------|:-------:|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/<br>21/22/25]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
 
 </div>
 
@@ -599,11 +600,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values | Default |
-|---------------------------------------|-------------------------------------------|--------|:-------:|
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |        |   N/A   |
+| Item                                  | Type                                      | Values |
+|---------------------------------------|-------------------------------------------|--------|
+| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |        |
 
 </div>
 
@@ -651,11 +652,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Values                                                                  | Default |
-|-------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------|:-------:|
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |   N/A   |
+| Item                                      | Type                                    | Values                                                                  |
+|-------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------|
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
 
 </div>
 
@@ -687,11 +688,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                             | Default |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|:-------:|
-| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |   N/A   |
+| Item                                 | Type                                    | Values                                                             |
+|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
+| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
 
 </div>
 
@@ -742,11 +743,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -771,12 +772,12 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Values                                                                    | Default |
-|-------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [400_000]{custom-style="NormalTok"} |   N/A   |
+| Item                                      | Type                                    | Values                                                                    |
+|-------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [400_000]{custom-style="NormalTok"} |
 
 </div>
 
@@ -790,11 +791,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -818,12 +819,12 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                                                          | Default |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                       |   N/A   |
-| [\<bit\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus addressing.<br>[0]{custom-style="NormalTok"} is 7-bit addressing,<br>[1]{custom-style="NormalTok"} is 8-bit |   N/A   |
+| Item                                | Type                                    | Values                                                                                                          |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                       |
+| [\<bit\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus addressing.<br>[0]{custom-style="NormalTok"} is 7-bit addressing,<br>[1]{custom-style="NormalTok"} is 8-bit |
 
 </div>
 
@@ -837,11 +838,11 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -866,14 +867,14 @@ Stop condition is configured by \<stop\>.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                                   | Values                                                                                                                                                                     | Default |
-|-----------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |   N/A   |
-| [\<address\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |   N/A   |
-| [\<buffer\>]{custom-style="NormalTok"}  | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) |                                                                                                                                                                            |   N/A   |
-| [\<stop\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1)                | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |   N/A   |
+| Item                                    | Type                                                   | Values                                                                                                                                                                     |
+|-----------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
+| [\<address\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
+| [\<buffer\>]{custom-style="NormalTok"}  | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) |                                                                                                                                                                            |
+| [\<stop\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1)                | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |
 
 </div>
 
@@ -888,14 +889,14 @@ Stop condition is configured by \<stop\>.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                    | Values                                                                                                                                                                     | Default |
-|-----------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |   N/A   |
-| [\<address\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |   N/A   |
-| [\<length\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | 1 or larger                                                                                                                                                                |   N/A   |
-| [\<stop\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |   N/A   |
+| Item                                    | Type                                    | Values                                                                                                                                                                     |
+|-----------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
+| [\<address\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
+| [\<length\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | 1 or larger                                                                                                                                                                |
+| [\<stop\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |
 
 </div>
 
@@ -919,15 +920,15 @@ Stop condition is configured by \<stop\>.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                       | Type                                                   | Values                                                                                                                                                                     | Default |
-|--------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |   N/A   |
-| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |   N/A   |
-| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |   N/A   |
-| [\<buffer\>]{custom-style="NormalTok"}     | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                                                                                                                             |   N/A   |
-| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |   N/A   |
+| Item                                       | Type                                                   | Values                                                                                                                                                                     |
+|--------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
+| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
+| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |
+| [\<buffer\>]{custom-style="NormalTok"}     | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                                                                                                                             |
+| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |
 
 </div>
 
@@ -942,15 +943,15 @@ the target I2C slave slave device.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                       | Type                                    | Values                                                                                                                                                                     | Default |
-|--------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |   N/A   |
-| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |   N/A   |
-| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |   N/A   |
-| [\<nbytes\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr4) | 1 or larger                                                                                                                                                                |   N/A   |
-| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} or [2]{custom-style="NormalTok"}                                                                                                             |   N/A   |
+| Item                                       | Type                                    | Values                                                                                                                                                                     |
+|--------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
+| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
+| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |
+| [\<nbytes\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr4) | 1 or larger                                                                                                                                                                |
+| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} or [2]{custom-style="NormalTok"}                                                                                                             |
 
 </div>
 
@@ -996,12 +997,12 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTo
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                     | Type                                      | Values                                                                                                            | Default |
-|------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                         |   N/A   |
-| [\<polarity\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Chip select polarity.<br>[1]{custom-style="NormalTok"} is HI-active<br>[0]{custom-style="NormalTok"} is LO-active |   N/A   |
+| Item                                     | Type                                      | Values                                                                                                            |
+|------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                         |
+| [\<polarity\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Chip select polarity.<br>[1]{custom-style="NormalTok"} is HI-active<br>[0]{custom-style="NormalTok"} is LO-active |
 
 </div>
 
@@ -1019,11 +1020,11 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTo
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1049,12 +1050,12 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values                                                                    | Default |
-|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |   N/A   |
+| Item                                  | Type                                      | Values                                                                    |
+|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
 
 </div>
 
@@ -1069,11 +1070,11 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1108,12 +1109,12 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                                                                 | Default |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                              |   N/A   |
-| [\<mode\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus clock and phase mode<br>[0/1/2/3]{custom-style="NormalTok"} or [DEFault]{custom-style="NormalTok"} |   N/A   |
+| Item                                 | Type                                    | Values                                                                                                 |
+|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                              |
+| [\<mode\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus clock and phase mode<br>[0/1/2/3]{custom-style="NormalTok"} or [DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1127,11 +1128,11 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1155,12 +1156,12 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Values                                                                       | Default |
-|-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}    |   N/A   |
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [10_000_000]{custom-style="NormalTok"} |   N/A   |
+| Item                                      | Type                                    | Values                                                                       |
+|-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}    |
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [10_000_000]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1174,11 +1175,11 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    | Default |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
+| Item                                | Type                                    | Values                                                                    |
+|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1203,14 +1204,14 @@ at the same time. Also, it configures chip select pin for pre and post of data t
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                                   | Values                                                                    | Default |
-|-----------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
-| [\<data\>]{custom-style="NormalTok"}    | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                            |   N/A   |
-| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |   N/A   |
-| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |   N/A   |
+| Item                                    | Type                                                   | Values                                                                    |
+|-----------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<data\>]{custom-style="NormalTok"}    | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                            |
+| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |
+| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |
 
 </div>
 
@@ -1235,14 +1236,14 @@ for pre and post of data transfer respectively.
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                                   | Values                                                                    | Default |
-|-----------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
-| [\<data\>]{custom-style="NormalTok"}    | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                            |   N/A   |
-| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |   N/A   |
-| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |   N/A   |
+| Item                                    | Type                                                   | Values                                                                    |
+|-----------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<data\>]{custom-style="NormalTok"}    | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                            |
+| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |
+| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool)              | Logical value of CS pin.                                                  |
 
 </div>
 
@@ -1257,15 +1258,15 @@ Also, it configures chip select pin for pre and post of data transfer respective
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                      | Values                                                                    | Default |
-|-----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|:-------:|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |   N/A   |
-| [\<length\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1)   |                                                                           |   N/A   |
-| [\<mask\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1)   |                                                                           |   N/A   |
-| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |   N/A   |
-| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |   N/A   |
+| Item                                    | Type                                      | Values                                                                    |
+|-----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<length\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1)   |                                                                           |
+| [\<mask\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1)   |                                                                           |
+| [\<pre_cs\>]{custom-style="NormalTok"}  | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
+| [\<post_cs\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
 
 </div>
 
@@ -1291,11 +1292,11 @@ Also, it configures chip select pin for pre and post of data transfer respective
 
 #### Parameter {-}
 
-<div class="table" width="[0.22,0.23,0.40,0.15]">
+<div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                    | Values                                | Default |
-|-----------------------------------------|-----------------------------------------|---------------------------------------|:-------:|
-| [\<channel\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [0/1/2/3/4]{custom-style="NormalTok"} |   N/A   |
+| Item                                    | Type                                    | Values                                |
+|-----------------------------------------|-----------------------------------------|---------------------------------------|
+| [\<channel\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [0/1/2/3/4]{custom-style="NormalTok"} |
 
 </div>
 
