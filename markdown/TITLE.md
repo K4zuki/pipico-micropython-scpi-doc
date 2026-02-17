@@ -203,7 +203,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 | Item                                      | Type                                    | Range of values                                                                    |
 |-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------|
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [100_000_000]{custom-style="NormalTok"} to [264_000_000]{custom-style="NormalTok"} |
-|                                           | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                            |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                            |
 
 </div>
 
@@ -227,9 +227,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item | Type                                    | Range of values                                         |
-|------|-----------------------------------------|---------------------------------------------------------|
-|      | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Range of values                                         |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -367,9 +367,10 @@ PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                    |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                       |
 
 </div>
 
@@ -405,10 +406,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values                                                    |
-|---------------------------------------|-------------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |                                                           |
+| Item                                  | Type                                                                             | Values                                                    |
+|---------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                                          | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0/1/ON/OFF/DEFault]{custom-style="NormalTok"}            |
 
 </div>
 
@@ -432,9 +433,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                    |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                       |
 
 </div>
 
@@ -765,9 +767,9 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values |
-|---------------------------------------|-------------------------------------------|--------|
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) |        |
+| Item                                  | Type                                                                             | Values                                                 |
+|---------------------------------------|----------------------------------------------------------------------------------|--------------------------------------------------------|
+| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0 / 1 / ON / OFF / DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -831,6 +833,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 | Item                                      | Type                                    | Values                                                                  |
 |-------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------|
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                 |
 
 </div>
 
@@ -963,6 +966,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [400_000]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
 
 </div>
 
@@ -978,9 +982,10 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
 
 </div>
 
@@ -1016,10 +1021,11 @@ Also sets default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                                                          |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                       |
-| [\<bit\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus addressing.<br>[0]{custom-style="NormalTok"} is 7-bit addressing,<br>[1]{custom-style="NormalTok"} is 8-bit |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<bit\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus addressing                                                            |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1035,9 +1041,10 @@ Also sets default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1204,10 +1211,11 @@ Also sets default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                     | Type                                      | Values                                                                                                            |
-|------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                         |
-| [\<polarity\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Chip select polarity.<br>[1]{custom-style="NormalTok"} is HI-active<br>[0]{custom-style="NormalTok"} is LO-active |
+| Item                                     | Type                                      | Values                                                                    |
+|------------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<polarity\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Chip select polarity                                                      |
+| [\<keyword\>]{custom-style="NormalTok"}  | [[CPD]{custom-style="NormalTok"}](#cpd)   | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1227,9 +1235,10 @@ Also sets default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1265,10 +1274,11 @@ Also returns default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                      | Values                                                                    |
-|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
-| [\<value\>]{custom-style="NormalTok"} | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
+| Item                                    | Type                                      | Values                                                                    |
+|-----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"}   | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd)   | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1285,9 +1295,10 @@ Also returns default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"}                                       |
 
 </div>
 
@@ -1324,10 +1335,10 @@ Also returns default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                                                                 |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                              |
-| [\<mode\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus clock and phase mode<br>[0/1/2/3]{custom-style="NormalTok"} or [DEFault]{custom-style="NormalTok"} |
+| Item                                     | Type                                    | Values                                                                                                 |
+|------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                              |
+| [\<mode\>]{.st custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus clock and phase mode<br>[0/1/2/3]{custom-style="NormalTok"} or [DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -1386,6 +1397,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}    |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [10_000_000]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                      |
 
 </div>
 
@@ -1401,9 +1413,10 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                                    |
-|-------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                                    |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
 
 </div>
 
