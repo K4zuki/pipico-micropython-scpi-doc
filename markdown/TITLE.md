@@ -780,7 +780,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 [LED:VALue?]{custom-style="ControlFlowTok"}
 
-:   This query returns logical value of onboard LED.
+:   This query returns logical value of onboard LED. Also returns default value when keyword parameter applied.
 
 #### Returned Query Format {-}
 
@@ -792,19 +792,19 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 :   Typical Response: [ON]{custom-style="StringTok"}
 
-## LED:PWM:ENable {.unnumbered #led-pwm-enable}
+## LED:PWM:ON {.unnumbered #led-pwm-enable}
 
 #### Syntax {-}
 
-[LED:PWM:ENable]{custom-style="ControlFlowTok"}
+[LED:PWM:ON]{custom-style="ControlFlowTok"}
 
 :   This command enables PWM output for onboard LED.
 
-## LED:PWM:DISable {.unnumbered #led-pwm-disable}
+## LED:PWM:OFF {.unnumbered #led-pwm-disable}
 
 #### Syntax {-}
 
-[LED:PWM:DISable]{custom-style="ControlFlowTok"}
+[LED:PWM:OFF]{custom-style="ControlFlowTok"}
 
 :   This command disables PWM output for onboard LED.
 
@@ -812,7 +812,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 #### Syntax {-}
 
-[LED:PWM:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[LED:PWM:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM frequency of onboard LED in Hz.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
@@ -838,6 +838,12 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 </div>
 
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM:FREQ 55555` [// LED PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
+:::
+
 ## LED:PWM:FREQuency? {.unnumbered #led-pwm-frequency-query}
 
 #### Syntax {-}
@@ -845,6 +851,17 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 [LED:PWM:FREQuency?]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM frequency of onboard LED in Hz.
+Also returns minimum, default and maximum frequency when keyword parameter applied.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                    | Type                                    | Values                                                  |
+|-----------------------------------------|-----------------------------------------|---------------------------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
+
+</div>
 
 #### Returned Query Format {-}
 
@@ -862,7 +879,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 [LED:PWM:DUTY \<duty\>]{custom-style="ControlFlowTok"}
 
-:   This command sets PWM duty of onboard LED in range of 1 to 65535.
+:   This command sets PWM duty of onboard LED in range of 0 to 65535.
 
 #### Parameter {-}
 
@@ -873,6 +890,12 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 | [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
 
 </div>
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM:DUTY 25252` [// LED PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
+:::
 
 ## LED:PWM:DUTY? {.unnumbered #led-pwm-duty-query}
 
@@ -891,6 +914,34 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 `LED:PWM:DUTY?` [// Returns LED PWM duty in integer]{custom-style="CommentTok"}
 
 :   Typical Response: [32768]{custom-style="StringTok"}
+
+## LED:PWM:ON {.unnumbered #pwm-on}
+
+#### Syntax {-}
+
+[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
+
+:   This command enables PWM mode on the pin and starts switching.
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
+:::
+
+## LED:PWM:OFF {.unnumbered #pwm-off}
+
+#### Syntax {-}
+
+[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
+
+:   This command disables PWM mode on the pin and goes to default pin mode.
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM::OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
+:::
 
 # I2C Subsystem {.subsection-toc}
 
