@@ -995,7 +995,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 #### Syntax {-}
 
-[I2C\<bus\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[I2C\<bus\>:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets clock frequency of specified bus.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
@@ -1022,13 +1022,20 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 </div>
 
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`I2C0:FREQ 55_555` [// I2C0 bus frequency is set at 55.555kHz]{custom-style="CommentTok"}
+:::
+
 ## I2C:FREQuency? {.unnumbered #i2c-frequency-query}
 
 #### Syntax {-}
 
-[I2C\<bus\>:FREQuency?]{custom-style="ControlFlowTok"}
+[I2C\<bus\>:FREQuency? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns clock frequency of specified bus.
+Also returns minimum, default and maximum frequency when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -1049,13 +1056,13 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 `I2C1:FREQuency?` [// Returns bus clock frequency setting in Hz]{custom-style="CommentTok"}
 
-:   Typical Response: [400000]{custom-style="StringTok"}
+:   Typical Response: [400_000]{custom-style="StringTok"}
 
 ## I2C:ADDRess:BIT {.unnumbered #i2c-address-bit}
 
 #### Syntax {-}
 
-[I2C\<bus\>:ADDRess:BIT \<bit\>]{custom-style="ControlFlowTok"}
+[I2C\<bus\>:ADDRess:BIT \<bit\>|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets addressing of specified bus.
 Also sets default value when keyword parameter applied.
@@ -1081,13 +1088,20 @@ Also sets default value when keyword parameter applied.
 
 </div>
 
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`I2C0:ADDR:BIT 0` [// I2C0 uses 7-bit addressing]{custom-style="CommentTok"}
+:::
+
 ## I2C:ADDRess:BIT? {.unnumbered #i2c-address-bit-query}
 
 #### Syntax {-}
 
-[I2C\<bus\>:ADDRess:BIT?]{custom-style="ControlFlowTok"}
+[I2C\<bus\>:ADDRess:BIT? \[DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns addressing of specified bus.
+Also returns default value when keyword parameter applied.
 
 #### Parameter {-}
 
