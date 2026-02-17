@@ -502,9 +502,9 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 #### Syntax {-}
 
-[PIN?]{custom-style="ControlFlowTok"}
+[PWM?]{custom-style="ControlFlowTok"}
 
-:   This query returns status of all available pins (mode, value).
+:   This query returns status of all available pins' PWM configuration (frequency, duty).
 
 #### Returned Query Format {-}
 
@@ -512,25 +512,25 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 #### Example {-}
 
-`PIN?` [// Returns entire Pin status]{custom-style="CommentTok"}
+`PWM?` [// Returns entire Pin status]{custom-style="CommentTok"}
 
 :   Typical Response: <br>[
-PWM14:FREQuency 1000;PWM14:DUTY 32768;
-PWM15:FREQuency 1000;PWM15:DUTY 32768;
-PWM16:FREQuency 1000;PWM16:DUTY 32768;
-PWM17:FREQuency 1000;PWM17:DUTY 32768;
-PWM18:FREQuency 1000;PWM18:DUTY 32768;
-PWM19:FREQuency 1000;PWM19:DUTY 32768;
-PWM20:FREQuency 1000;PWM20:DUTY 32768;
-PWM21:FREQuency 1000;PWM21:DUTY 32768;
-PWM22:FREQuency 1000;PWM22:DUTY 32768;
-PWM25:FREQuency 1000;PWM25:DUTY 32768;]{custom-style="StringTok"}
+PWM14:FREQuency 1000;PWM14:DUTY 32_768;
+PWM15:FREQuency 1000;PWM15:DUTY 32_768;
+PWM16:FREQuency 1000;PWM16:DUTY 32_768;
+PWM17:FREQuency 1000;PWM17:DUTY 32_768;
+PWM18:FREQuency 1000;PWM18:DUTY 32_768;
+PWM19:FREQuency 1000;PWM19:DUTY 32_768;
+PWM20:FREQuency 1000;PWM20:DUTY 32_768;
+PWM21:FREQuency 1000;PWM21:DUTY 32_768;
+PWM22:FREQuency 1000;PWM22:DUTY 32_768;
+PWM25:FREQuency 1000;PWM25:DUTY 32_768;]{custom-style="StringTok"}
 
 ## PWM:FREQuency {.unnumbered #pwm-frequency}
 
 #### Syntax {-}
 
-[PWM\<pin\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM frequency of specified IO pin in Hz.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
@@ -553,30 +553,33 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------|
 | [\<pin\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}                |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1_000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                  |
 
 </div>
 
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PIN14:PWM:FREQ 55555` [// Pin14 PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
+`PWM14:FREQ 55555` [// Pin14 PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
 :::
 
 ## PWM:FREQuency? {.unnumbered #pwm-frequency-query}
 
 #### Syntax {-}
 
-[PWM\<pin\>:FREQuency?]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:FREQuency? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM frequency of specified IO pin in Hz.
+Also returns minimum, default and maximum frequency when keyword parameter applied.
 
 #### Parameter {-}
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                    |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}   |
 
 </div>
 
@@ -586,7 +589,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 #### Example {-}
 
-`PIN14:PWM:FREQ?` [// Returns Pin14 PWM frequency in Hz]{custom-style="CommentTok"}
+`PWM14:FREQ?` [// Returns Pin14 PWM frequency in Hz]{custom-style="CommentTok"}
 
 :   Typical Response: [500000]{custom-style="StringTok"}
 
@@ -594,7 +597,10 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 #### Syntax {-}
 
-[PWM\<pin\>:DUTY \<duty\>]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:DUTY \<duty\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
+
+:   This command sets PWM duty of specified IO pin in range of 0 to 65535.
+Also sets to minimum, default or maximum duty when keyword parameter applied.
 
     <div class="table" width="[0.2,0.6]">
 
@@ -610,34 +616,37 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                             |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}          |
-| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                             |
+|-----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}          |
+| [\<duty\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}            |
 
 </div>
 
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PIN14:PWM:DUTY 25252` [// Pin14 PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
+`PWM14:DUTY 25252` [// Pin14 PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
 :::
 
 ## PWM:DUTY? {.unnumbered #pwm-duty-query}
 
 #### Syntax {-}
 
-[PWM\<pin\>:DUTY?]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:DUTY? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM duty of specified IO pin in range of 1 to 65535
+Also returns minimum, default and maximum duty when keyword parameter applied.
 
 #### Parameter {-}
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                    |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}   |
 
 </div>
 
@@ -647,7 +656,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 #### Example {-}
 
-`PIN14:PWM:DUTY?` [// Returns Pin14 PWM duty in integer]{custom-style="CommentTok"}
+`PWM14:DUTY?` [// Returns Pin14 PWM duty in integer]{custom-style="CommentTok"}
 
 :   Typical Response: [32768]{custom-style="StringTok"}
 
@@ -657,7 +666,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 [PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
 
-:   This command sets logical value of specified IO pin to logic HI.
+:   This command enables PWM mode on the pin and starts switching.
 
 #### Parameter {-}
 
@@ -672,7 +681,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PIN14:ON` [// Sets Pin14 to logic HI]{custom-style="CommentTok"} \
+`PWM14:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
 :::
 
 ## PWM:OFF {.unnumbered #pwm-off}
@@ -681,7 +690,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 [PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
 
-:   This command sets logical value of specified IO pin to logic LO.
+:   This command disables PWM mode on the pin and goes to default pin mode.
 
 #### Parameter {-}
 
@@ -696,7 +705,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PIN14:OFF` [// Sets Pin14 to logic LO]{custom-style="CommentTok"} \
+`PWM14:OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
 :::
 
 # LED Subsystem {.subsection-toc}
