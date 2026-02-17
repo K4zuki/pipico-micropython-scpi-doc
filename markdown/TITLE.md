@@ -186,6 +186,16 @@ This data type has an implied message terminator.
 [\<frequency\>]{custom-style="PreprocessorTok"} must be between 100MHz and 264MHz inclusive.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |           CPU frequency [Hz]            |
+    |:-----------------------------------:|:---------------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} | [100_000_000]{custom-style="NormalTok"} |
+    | [MAXimum]{custom-style="NormalTok"} | [125_000_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [264_000_000]{custom-style="NormalTok"} |
+
+    </div>
+
 #### Parameter {-}
 
 <div class="table" width="[0.22,0.23,0.55]">
@@ -317,6 +327,17 @@ PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 
 :   This command sets mode of specified IO pin.
 
+    <div class="table" width="[0.2,0.4]">
+
+    |                                 Keyword                                  |     Pin mode      |
+    |:------------------------------------------------------------------------:|:-----------------:|
+    | [INput]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} |       Input       |
+    |                    [OUTput]{custom-style="NormalTok"}                    | Push-pull output  |
+    |                    [ODrain]{custom-style="NormalTok"}                    | Open-drain output |
+    |                     [PWM]{custom-style="NormalTok"}                      |        PWM        |
+
+    </div>
+
 #### Parameter {-}
 
 <div class="table" width="[0.22,0.23,0.55]">
@@ -369,8 +390,16 @@ PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 [PIN\<pin\>:VALue \<value\>]{custom-style="ControlFlowTok"}
 
 :   This command sets logical value of specified IO pin.
-Numeric [1]{custom-style="PreprocessorTok"} and string [ON]{custom-style="PreprocessorTok"} sets logic HI.
-Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="PreprocessorTok"} sets logic LO.
+Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |                                                Value                                                | Logical value |
+    |:---------------------------------------------------------------------------------------------------:|:-------------:|
+    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    |      HI       |
+    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |      LO       |
+
+    </div>
 
 #### Parameter {-}
 
@@ -504,6 +533,17 @@ PWM25:FREQuency 1000;PWM25:DUTY 32768;]{custom-style="StringTok"}
 [PWM\<pin\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM frequency of specified IO pin in Hz.
+Also sets to minimum, default or maximum frequency when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |         PWM frequency [Hz]          |
+    |:-----------------------------------:|:-----------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |  [1_000]{custom-style="NormalTok"}  |
+    | [MAXimum]{custom-style="NormalTok"} | [100_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} |  [1_000]{custom-style="NormalTok"}  |
+
+    </div>
 
 #### Parameter {-}
 
@@ -556,7 +596,15 @@ PWM25:FREQuency 1000;PWM25:DUTY 32768;]{custom-style="StringTok"}
 
 [PWM\<pin\>:DUTY \<duty\>]{custom-style="ControlFlowTok"}
 
-:   This command sets PWM duty of specified IO pin in range of 1 to 65535.
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |             PWM duty              |
+    |:-----------------------------------:|:---------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |   [0]{custom-style="NormalTok"}   |
+    | [MAXimum]{custom-style="NormalTok"} | [32768]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [65535]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Parameter {-}
 
@@ -692,9 +740,17 @@ PWM25:FREQuency 1000;PWM25:DUTY 32768;]{custom-style="StringTok"}
 
 [LED:VALue \<value\>]{custom-style="ControlFlowTok"}
 
-:   This command sets logical value of onboard LED. Numeric [1]{custom-style="PreprocessorTok"} and
-string [ON]{custom-style="PreprocessorTok"} turns on.
-Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="PreprocessorTok"} turns off.
+:   This command sets logical value of onboard LED.
+Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |                                                Value                                                | Logical value |
+    |:---------------------------------------------------------------------------------------------------:|:-------------:|
+    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    |      HI       |
+    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |      LO       |
+
+    </div>
 
 #### Parameter {-}
 
@@ -747,6 +803,17 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 [LED:PWM:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM frequency of onboard LED in Hz.
+Also sets to minimum, default or maximum frequency when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |         PWM frequency [Hz]          |
+    |:-----------------------------------:|:-----------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |  [1_000]{custom-style="NormalTok"}  |
+    | [MAXimum]{custom-style="NormalTok"} | [100_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} |  [1_000]{custom-style="NormalTok"}  |
+
+    </div>
 
 #### Parameter {-}
 
@@ -867,6 +934,17 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 [I2C\<bus\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
 
 :   This command sets clock frequency of specified bus.
+Also sets to minimum, default or maximum frequency when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |         PWM frequency [Hz]          |
+    |:-----------------------------------:|:-----------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} | [10_000]{custom-style="NormalTok"}  |
+    | [MAXimum]{custom-style="NormalTok"} | [400_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [100_000]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Parameter {-}
 
@@ -914,6 +992,16 @@ Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="Prepr
 [I2C\<bus\>:ADDRess:BIT \<bit\>]{custom-style="ControlFlowTok"}
 
 :   This command sets addressing of specified bus.
+Also sets default value when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |                               Value                                | Addressing |
+    |:------------------------------------------------------------------:|:----------:|
+    |                   [0]{custom-style="NormalTok"}                    |   7-bit    |
+    | [1]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |   8-bit    |
+
+    </div>
 
 #### Parameter {-}
 
@@ -1092,6 +1180,16 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTo
 [SPI\<bus\>:CSEL:POLarity \<polarity\>]{custom-style="ControlFlowTok"}
 
 :   This command sets chip select polarity for specified SPI bus
+Also sets default value when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |                               Value                                | Polarity  |
+    |:------------------------------------------------------------------:|:---------:|
+    |                   [1]{custom-style="NormalTok"}                    | HI-active |
+    | [0]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} | LO-active |
+
+    </div>
 
 #### Parameter {-}
 
@@ -1143,8 +1241,16 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTo
 [SPI\<bus\>:CSEL:VALue \<value\>]{custom-style="ControlFlowTok"}
 
 :   This command sets logical value of chip select pin for specified bus.
-Numeric [1]{custom-style="PreprocessorTok"} and string [ON]{custom-style="PreprocessorTok"} selects bus. Numeric [0]{custom-style="PreprocessorTok"} and string [OFF]{custom-style="PreprocessorTok"} deselects bus.
-Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#spi-csel-polarity) command
+Also returns default value when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+    
+    |                                                Value                                                |   Bus    |
+    |:---------------------------------------------------------------------------------------------------:|:--------:|
+    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    | Enabled  |
+    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} | Disabled |
+    
+    </div>
 
 #### Parameter {-}
 
@@ -1251,6 +1357,17 @@ Chip select polarity is set by [[SPI:CSEL:POLarity]{custom-style="NormalTok"}](#
 [SPI\<bus\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
 
 :   This command sets bus clock frequency for specified bus.
+Also sets to minimum, default or maximum frequency when keyword parameter applied.
+
+    <div class="table" width="[0.2,0.6]">
+
+    |               Keyword               |           PWM frequency [Hz]           |
+    |:-----------------------------------:|:--------------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |   [10_000]{custom-style="NormalTok"}   |
+    | [MAXimum]{custom-style="NormalTok"} | [1_000_000]{custom-style="NormalTok"}  |
+    | [DEFault]{custom-style="NormalTok"} | [10_000_000]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Parameter {-}
 
