@@ -299,6 +299,15 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 :   This query returns status of all available pins (mode, value).
 
+    <div class="table" width="[0.2,0.4]">
+
+    |                   Command                    |          Default value          |
+    |:--------------------------------------------:|:-------------------------------:|
+    | [PIN\<pin\>:MODE]{custom-style="NormalTok"}  | [IN]{custom-style="NormalTok"}  |
+    | [PIN\<pin\>:Value]{custom-style="NormalTok"} | [OFF]{custom-style="NormalTok"} |
+
+    </div>
+
 #### Returned Query Format {-}
 
 [[\<CRD\>]{custom-style="NormalTok"}](#crd)
@@ -508,6 +517,15 @@ Also returns default value when keyword parameter applied.
 [PWM?]{custom-style="ControlFlowTok"}
 
 :   This query returns status of all available pins' PWM configuration (frequency, duty).
+
+    <div class="table" width="[0.2,0.4]">
+
+    |                     Command                      |           Default value            |
+    |:------------------------------------------------:|:----------------------------------:|
+    | [PWM\<pin\>:FREQuency]{custom-style="NormalTok"} | [1_000]{custom-style="NormalTok"}  |
+    |   [PWM\<pin\>:DUTY]{custom-style="NormalTok"}    | [32_768]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Returned Query Format {-}
 
@@ -720,6 +738,16 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 [LED?]{custom-style="ControlFlowTok"}
 
 :   This query returns all status of onboard LED (value, PWM frequency, PWM duty).
+
+    <div class="table" width="[0.2,0.4]">
+
+    |                    Command                    |           Default value            |
+    |:---------------------------------------------:|:----------------------------------:|
+    |     [LED:VALue]{custom-style="NormalTok"}     |  [OFF]{custom-style="NormalTok"}   |
+    | [LED:PWM:FREQuency]{custom-style="NormalTok"} | [1_000]{custom-style="NormalTok"}  |
+    |   [LED:PWM:DUTY]{custom-style="NormalTok"}    | [32_768]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Returned Query Format {-}
 
@@ -952,6 +980,15 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 [I2C?]{custom-style="ControlFlowTok"}
 
 :   This query returns all status of I2C buses (addressing, clock frequency).
+
+    <div class="table" width="[0.2,0.4]">
+
+    |                      Command                       |            Default value            |
+    |:--------------------------------------------------:|:-----------------------------------:|
+    | [I2C\<bus\>:ADDRess:BIT]{custom-style="NormalTok"} |    [1]{custom-style="NormalTok"}    |
+    |  [I2C\<bus\>:FREQuency]{custom-style="NormalTok"}  | [100_000]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Returned Query Format {-}
 
@@ -1242,6 +1279,16 @@ the target I2C slave device.
 [SPI?]{custom-style="ControlFlowTok"}
 
 :   This query returns all status of SPI buses (chip select polarity, clock frequency, bus mode).
+
+    <div class="table" width="[0.2,0.6]">
+
+    |                       Command                        |             Default value             |
+    |:----------------------------------------------------:|:-------------------------------------:|
+    | [SPI\<bus\>:CSEL:POLarity]{custom-style="NormalTok"} |     [0]{custom-style="NormalTok"}     |
+    |   [SPI\<bus\>:FREQuency]{custom-style="NormalTok"}   | [1_000_000]{custom-style="NormalTok"} |
+    |     [SPI\<bus\>:MODE]{custom-style="NormalTok"}      |     [0]{custom-style="NormalTok"}     |
+
+    </div>
 
 #### Returned Query Format {-}
 
