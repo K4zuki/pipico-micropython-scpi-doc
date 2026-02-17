@@ -359,9 +359,10 @@ PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 
 #### Syntax {-}
 
-[PIN\<pin\>:MODE?]{custom-style="ControlFlowTok"}
+[PIN\<pin\>:MODE? \[DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns status of specified IO pin's mode.
+Also returns default status when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -382,7 +383,7 @@ PIN25:MODE IN;PIN25:VALue OFF;]{custom-style="StringTok"}
 
 `PIN14:MODE?` [// Returns Pin14 pin mode]{custom-style="CommentTok"}
 
-:   Typical Response: [INput]{custom-style="StringTok"}
+:   Typical Response: [IN]{custom-style="StringTok"}
 
 ## PIN:VALue {.unnumbered #pin-value}
 
@@ -424,10 +425,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 #### Syntax {-}
 
-[PIN\<pin\>:VALue?]{custom-style="ControlFlowTok"}
+[PIN\<pin\>:VALue? \[DEFault\]]{custom-style="ControlFlowTok"}
 
-:   This query returns logical value of specified IO pin. [ON]{custom-style="PreprocessorTok"} is a logic HI, \
-[OFF]{custom-style="PreprocessorTok"} is a logic LO.
+:   This query returns logical value of specified IO pin.
+Also returns default value when keyword parameter applied.
 
 #### Parameter {-}
 
