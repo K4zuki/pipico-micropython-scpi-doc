@@ -1259,7 +1259,7 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTo
 
 #### Syntax {-}
 
-[SPI\<bus\>:CSEL:POLarity \<polarity\>]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:CSEL:POLarity \<polarity\>|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets chip select polarity for specified SPI bus
 Also sets default value when keyword parameter applied.
@@ -1293,9 +1293,10 @@ Also sets default value when keyword parameter applied.
 
 #### Syntax {-}
 
-[SPI\<bus\>:CSEL:POLarity?]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:CSEL:POLarity? \[DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns chip select pin polarity for specified SPI bus
+Also returns default value when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -1322,7 +1323,7 @@ Also sets default value when keyword parameter applied.
 
 #### Syntax {-}
 
-[SPI\<bus\>:CSEL:VALue \<value\>]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:CSEL:VALue \<value\>|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets logical value of chip select pin for specified bus.
 Also returns default value when keyword parameter applied.
@@ -1352,10 +1353,10 @@ Also returns default value when keyword parameter applied.
 
 #### Syntax {-}
 
-[SPI\<bus\>:CSEL:VALue?]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:CSEL:VALue? \[DEFault\]]{.cf custom-style="ControlFlowTok"}
 
-:   This query returns logical value of CS pin. [ON]{custom-style="PreprocessorTok"} is selecting bus,
-[OFF]{custom-style="PreprocessorTok"} is deselecting.
+:   This query returns logical value of CS pin.
+Also returns default value when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -1376,24 +1377,25 @@ Also returns default value when keyword parameter applied.
 
 `SPI0:CSEL:VALue?` [// Returns chip select pin value]{custom-style="CommentTok"}
 
-:   Typical Response: [OFF]{custom-style="StringTok"}
+:   Typical Response: [OFF]{custom-style=".st StringTok"}
 
 ## SPI:MODE {-}
 
 #### Syntax {-}
 
-[SPI\<bus\>:MODE \<mode\>]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:MODE \<mode\>|DEFault]{.cf custom-style="ControlFlowTok"}
 
 :   This command sets bus clock and phase mode for specified SPI bus
+Also returns default value when keyword parameter applied.
 
     <div class="table" width="[0.15,0.15,0.15]">
 
-    | Mode  | CPOL |  CPHA   |
-    |:-----:|:----:|:-------:|
-    | **0** | Low  | Rising  |
-    | **1** | Low  | Falling |
-    | **2** | High | Rising  |
-    | **3** | High | Falling |
+    |                    Mode                    | CPOL |  CPHA   |
+    |:------------------------------------------:|:----:|:-------:|
+    | **0**, [DEFault]{custom-style="NormalTok"} | Low  | Rising  |
+    |                   **1**                    | Low  | Falling |
+    |                   **2**                    | High | Rising  |
+    |                   **3**                    | High | Falling |
 
     </div>
 
@@ -1440,7 +1442,7 @@ Also returns default value when keyword parameter applied.
 
 #### Syntax {-}
 
-[SPI\<bus\>:FREQuency \<frequency\>]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]]{custom-style="ControlFlowTok"}
 
 :   This command sets bus clock frequency for specified bus.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
@@ -1474,6 +1476,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 [SPI\<bus\>:FREQuency?]{custom-style="ControlFlowTok"}
 
 :   This query returns bus clock frequency for specified bus.
+Also returns minimum, default and maximum frequency when keyword parameter applied.
 
 #### Parameter {-}
 
@@ -1494,7 +1497,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 `SPI0:FREQuency?` [// Returns SPI0 bus clock frequency in integer]{custom-style="CommentTok"}
 
-:   Typical Response: [5000000]{custom-style="StringTok"}
+:   Typical Response: [5_000_000]{custom-style="StringTok"}
 
 ## SPI:TRANSfer {-}
 
