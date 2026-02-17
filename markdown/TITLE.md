@@ -203,7 +203,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 | Item                                      | Type                                    | Range of values                                                                    |
 |-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------|
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [100_000_000]{custom-style="NormalTok"} to [264_000_000]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                            |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                                |
 
 </div>
 
@@ -227,9 +227,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                    | Range of values                                         |
-|-----------------------------------------|-----------------------------------------|---------------------------------------------------------|
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Range of values                                     |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -396,10 +396,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
     <div class="table" width="[0.2,0.6]">
 
-    |                                                Value                                                | Logical value |
-    |:---------------------------------------------------------------------------------------------------:|:-------------:|
-    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    |      HI       |
-    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |      LO       |
+    |                                                  Value                                                  | Logical value |
+    |:-------------------------------------------------------------------------------------------------------:|:-------------:|
+    |                     [1]{custom-style="NormalTok"}<br>[ON]{custom-style="NormalTok"}                     |      HI       |
+    | [0]{custom-style="NormalTok"}<br>[OFF]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} |      LO       |
 
     </div>
 
@@ -518,16 +518,16 @@ Also returns default value when keyword parameter applied.
 `PWM?` [// Returns entire Pin status]{custom-style="CommentTok"}
 
 :   Typical Response: <br>[
-PWM14:FREQuency 1000;PWM14:DUTY 32_768;
-PWM15:FREQuency 1000;PWM15:DUTY 32_768;
-PWM16:FREQuency 1000;PWM16:DUTY 32_768;
-PWM17:FREQuency 1000;PWM17:DUTY 32_768;
-PWM18:FREQuency 1000;PWM18:DUTY 32_768;
-PWM19:FREQuency 1000;PWM19:DUTY 32_768;
-PWM20:FREQuency 1000;PWM20:DUTY 32_768;
-PWM21:FREQuency 1000;PWM21:DUTY 32_768;
-PWM22:FREQuency 1000;PWM22:DUTY 32_768;
-PWM25:FREQuency 1000;PWM25:DUTY 32_768;]{custom-style="StringTok"}
+PWM14:FREQuency 1_000;PWM14:DUTY 32_768;
+PWM15:FREQuency 1_000;PWM15:DUTY 32_768;
+PWM16:FREQuency 1_000;PWM16:DUTY 32_768;
+PWM17:FREQuency 1_000;PWM17:DUTY 32_768;
+PWM18:FREQuency 1_000;PWM18:DUTY 32_768;
+PWM19:FREQuency 1_000;PWM19:DUTY 32_768;
+PWM20:FREQuency 1_000;PWM20:DUTY 32_768;
+PWM21:FREQuency 1_000;PWM21:DUTY 32_768;
+PWM22:FREQuency 1_000;PWM22:DUTY 32_768;
+PWM25:FREQuency 1_000;PWM25:DUTY 32_768;]{custom-style="StringTok"}
 
 ## PWM:FREQuency {.unnumbered #pwm-frequency}
 
@@ -556,14 +556,14 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------|
 | [\<pin\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}                |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1_000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                  |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                      |
 
 </div>
 
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PWM14:FREQ 55555` [// Pin14 PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
+`PWM14:FREQ 55_555` [// Pin14 PWM frequency is set at 55_555Hz]{custom-style="CommentTok"}
 :::
 
 ## PWM:FREQuency? {.unnumbered #pwm-frequency-query}
@@ -582,7 +582,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 | Item                                    | Type                                    | Values                                                    |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
 | [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}   |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}       |
 
 </div>
 
@@ -594,7 +594,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 `PWM14:FREQ?` [// Returns Pin14 PWM frequency in Hz]{custom-style="CommentTok"}
 
-:   Typical Response: [500000]{custom-style="StringTok"}
+:   Typical Response: [500_000]{custom-style="StringTok"}
 
 ## PWM:DUTY {.unnumbered #pwm-duty}
 
@@ -607,11 +607,11 @@ Also sets to minimum, default or maximum duty when keyword parameter applied.
 
     <div class="table" width="[0.2,0.6]">
 
-    |               Keyword               |             PWM duty              |
-    |:-----------------------------------:|:---------------------------------:|
-    | [MINimum]{custom-style="NormalTok"} |   [0]{custom-style="NormalTok"}   |
-    | [MAXimum]{custom-style="NormalTok"} | [32768]{custom-style="NormalTok"} |
-    | [DEFault]{custom-style="NormalTok"} | [65535]{custom-style="NormalTok"} |
+    |               Keyword               |              PWM duty              |
+    |:-----------------------------------:|:----------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |   [0]{custom-style="NormalTok"}    |
+    | [MAXimum]{custom-style="NormalTok"} | [32_768]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [65_535]{custom-style="NormalTok"} |
 
     </div>
 
@@ -623,14 +623,14 @@ Also sets to minimum, default or maximum duty when keyword parameter applied.
 |-----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
 | [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"}          |
 | [\<duty\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}            |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                |
 
 </div>
 
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`PWM14:DUTY 25252` [// Pin14 PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
+`PWM14:DUTY 25_252` [// Pin14 PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
 :::
 
 ## PWM:DUTY? {.unnumbered #pwm-duty-query}
@@ -649,7 +649,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 | Item                                    | Type                                    | Values                                                    |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------------------------|
 | [\<pin\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}   |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}       |
 
 </div>
 
@@ -661,7 +661,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 
 `PWM14:DUTY?` [// Returns Pin14 PWM duty in integer]{custom-style="CommentTok"}
 
-:   Typical Response: [32768]{custom-style="StringTok"}
+:   Typical Response: [32_768]{custom-style="StringTok"}
 
 ## PWM:ON {.unnumbered #pwm-on}
 
@@ -728,7 +728,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 `LED?` [// Returns entire Pin status]{custom-style="CommentTok"}
 
 :   Typical Response:\
-[LED:VALue ON;LED:PWM:FREQuency 12345;LED:PWM:DUTY 12345]{custom-style="StringTok"}
+[LED:VALue ON;LED:PWM:FREQuency 12_345;LED:PWM:DUTY 54_321]{custom-style="StringTok"}
 
 ## LED:ON {.unnumbered #led-on}
 
@@ -757,10 +757,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
     <div class="table" width="[0.2,0.6]">
 
-    |                                                Value                                                | Logical value |
-    |:---------------------------------------------------------------------------------------------------:|:-------------:|
-    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    |      HI       |
-    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |      LO       |
+    |                                                  Value                                                  | Logical value |
+    |:-------------------------------------------------------------------------------------------------------:|:-------------:|
+    |                     [1]{custom-style="NormalTok"}<br>[ON]{custom-style="NormalTok"}                     |      HI       |
+    | [0]{custom-style="NormalTok"}<br>[OFF]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} |      LO       |
 
     </div>
 
@@ -768,9 +768,9 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                                                             | Values                                                 |
-|---------------------------------------|----------------------------------------------------------------------------------|--------------------------------------------------------|
-| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0 / 1 / ON / OFF / DEFault]{custom-style="NormalTok"} |
+| Item                                  | Type                                                                             | Values                                         |
+|---------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------|
+| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0/1/ON/OFF/DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -831,17 +831,17 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                      | Type                                    | Values                                                                  |
-|-------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------|
-| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                 |
+| Item                                      | Type                                    | Values                                                                   |
+|-------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------|
+| [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1_000]{custom-style="NormalTok"} to [100_000]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                      |
 
 </div>
 
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`LED:PWM:FREQ 55555` [// LED PWM frequency is set at 55555Hz]{custom-style="CommentTok"}
+`LED:PWM:FREQ 55_555` [// LED PWM frequency is set at 55_555Hz]{custom-style="CommentTok"}
 :::
 
 ## LED:PWM:FREQuency? {.unnumbered #led-pwm-frequency-query}
@@ -857,9 +857,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                    | Values                                                  |
-|-----------------------------------------|-----------------------------------------|---------------------------------------------------------|
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                              |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -871,7 +871,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 `LED:PWM:FREQ?` [// Returns Pin14 PWM frequency in Hz]{custom-style="CommentTok"}
 
-:   Typical Response: [500000]{custom-style="StringTok"}
+:   Typical Response: [500_000]{custom-style="StringTok"}
 
 ## LED:PWM:DUTY {.unnumbered #led-pwm-duty}
 
@@ -894,7 +894,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`LED:PWM:DUTY 25252` [// LED PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
+`LED:PWM:DUTY 25_252` [// LED PWM duty is set at 25252 out of 65535]{custom-style="CommentTok"}
 :::
 
 ## LED:PWM:DUTY? {.unnumbered #led-pwm-duty-query}
@@ -913,7 +913,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 `LED:PWM:DUTY?` [// Returns LED PWM duty in integer]{custom-style="CommentTok"}
 
-:   Typical Response: [32768]{custom-style="StringTok"}
+:   Typical Response: [32_768]{custom-style="StringTok"}
 
 ## LED:PWM:ON {.unnumbered #pwm-on}
 
@@ -960,7 +960,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 `I2C?` [// Returns I2C bus status]{custom-style="CommentTok"}
 
 :   Typical Response: \
-[I2C0:ADDRess:BIT 1;I2C0:FREQuency 100000;I2C1:ADDRess:BIT 1;I2C1:FREQuency 100000;]{custom-style="StringTok"}
+[I2C0:ADDRess:BIT 1;I2C0:FREQuency 100_000;I2C1:ADDRess:BIT 1;I2C1:FREQuency 100_000;]{custom-style="StringTok"}
 
 ## I2C:SCAN? {.unnumbered #i2c-scan-query}
 
@@ -1018,7 +1018,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [400_000]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                       |
 
 </div>
 
@@ -1044,7 +1044,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 | Item                                    | Type                                    | Values                                                                    |
 |-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                       |
 
 </div>
 
@@ -1069,10 +1069,10 @@ Also sets default value when keyword parameter applied.
 
     <div class="table" width="[0.2,0.6]">
 
-    |                               Value                                | Addressing |
-    |:------------------------------------------------------------------:|:----------:|
-    |                   [0]{custom-style="NormalTok"}                    |   7-bit    |
-    | [1]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} |   8-bit    |
+    |                                Value                                 | Addressing |
+    |:--------------------------------------------------------------------:|:----------:|
+    |                    [0]{custom-style="NormalTok"}                     |   7-bit    |
+    | [1]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} |   8-bit    |
 
     </div>
 
@@ -1207,7 +1207,7 @@ Stop condition is configured by \<stop\>.
 [I2C\<bus\>:MEMory:READ? \<address\>,\<memaddress\>,<br>\<nbytes\>,\<addrsize\>]{custom-style="ControlFlowTok"}
 
 :   This query returns comma separated list of hexadecimal data stored in specific memory address of
-the target I2C slave slave device.
+the target I2C slave device.
 
 #### Parameter {-}
 
@@ -1252,8 +1252,8 @@ the target I2C slave slave device.
 `SPI?` [// Returns SPI bus status]{custom-style="CommentTok"}
 
 :   Typical Response:\
-[SPI0:CSEL:POLarity 0;SPI0:FREQuency 1000000;SPI0:MODE 0;
-SPI1:CSEL:POLarity 0;SPI1:FREQuency 1000000;SPI1:MODE 0;]{custom-style="StringTok"}
+[SPI0:CSEL:POLarity 0;SPI0:FREQuency 1_000_000;SPI0:MODE 0;
+SPI1:CSEL:POLarity 0;SPI1:FREQuency 1_000_000;SPI1:MODE 0;]{custom-style="StringTok"}
 
 ## SPI:CSEL:POLarity {.unnumbered #spi-csel-polarity}
 
@@ -1266,10 +1266,10 @@ Also sets default value when keyword parameter applied.
 
     <div class="table" width="[0.2,0.6]">
 
-    |                               Value                                | Polarity  |
-    |:------------------------------------------------------------------:|:---------:|
-    |                   [1]{custom-style="NormalTok"}                    | HI-active |
-    | [0]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} | LO-active |
+    |                                Value                                 | Polarity  |
+    |:--------------------------------------------------------------------:|:---------:|
+    |                    [1]{custom-style="NormalTok"}                     | HI-active |
+    | [0]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} | LO-active |
 
     </div>
 
@@ -1329,12 +1329,12 @@ Also returns default value when keyword parameter applied.
 Also returns default value when keyword parameter applied.
 
     <div class="table" width="[0.2,0.6]">
-    
-    |                                                Value                                                |   Bus    |
-    |:---------------------------------------------------------------------------------------------------:|:--------:|
-    |                    [1]{custom-style="NormalTok"}, [ON]{custom-style="NormalTok"}                    | Enabled  |
-    | [0]{custom-style="NormalTok"}, [OFF]{custom-style="NormalTok"}, [DEFault]{custom-style="NormalTok"} | Disabled |
-    
+
+    |                                                  Value                                                  |   Bus    |
+    |:-------------------------------------------------------------------------------------------------------:|:--------:|
+    |                     [1]{custom-style="NormalTok"}<br>[ON]{custom-style="NormalTok"}                     | Enabled  |
+    | [0]{custom-style="NormalTok"}<br>[OFF]{custom-style="NormalTok"}<br>[DEFault]{custom-style="NormalTok"} | Disabled |
+
     </div>
 
 #### Parameter {-}
@@ -1465,7 +1465,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 |-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}       | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}    |
 | [\<frequency\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [10_000]{custom-style="NormalTok"} to [10_000_000]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                      |
+| [\<keyword\>]{custom-style="NormalTok"}   | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                          |
 
 </div>
 
@@ -1485,7 +1485,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 | Item                                    | Type                                    | Values                                                                    |
 |-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|
 | [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum / MAXimum / DEFault]{custom-style="NormalTok"}                   |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                       |
 
 </div>
 
@@ -1614,7 +1614,7 @@ Also, it configures chip select pin for pre and post of data transfer respective
 
 `ADC2:READ?` [// Returns voltage at ADC2 in 16bit unsigned integer]{custom-style="CommentTok"}
 
-:   Typical Response: [32768]{custom-style="StringTok"}
+:   Typical Response: [12_345]{custom-style="StringTok"}
 
 # IEEE-488.2 Common Commands {#ieee4882-common-commands .subsection-toc}
 
