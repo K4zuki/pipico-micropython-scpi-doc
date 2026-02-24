@@ -820,21 +820,33 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 :   Typical Response: [ON]{custom-style="StringTok"}
 
-## LED:PWM:ON {.unnumbered #led-pwm-enable}
+## LED:PWM:ON {.unnumbered #led-pwm-on}
 
 #### Syntax {-}
 
-[LED:PWM:ON]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
 
-:   This command enables PWM output for onboard LED.
+:   This command enables PWM mode on the pin and starts switching.
 
-## LED:PWM:OFF {.unnumbered #led-pwm-disable}
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
+:::
+
+## LED:PWM:OFF {.unnumbered #led-pwm-off}
 
 #### Syntax {-}
 
-[LED:PWM:OFF]{custom-style="ControlFlowTok"}
+[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
 
-:   This command disables PWM output for onboard LED.
+:   This command disables PWM mode on the pin and goes to default pin mode.
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`LED:PWM::OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
+:::
 
 ## LED:PWM:FREQuency {.unnumbered #led-pwm-frequency}
 
@@ -942,34 +954,6 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 `LED:PWM:DUTY?` [// Returns LED PWM duty in integer]{custom-style="CommentTok"}
 
 :   Typical Response: [32_768]{custom-style="StringTok"}
-
-## LED:PWM:ON {.unnumbered #pwm-on}
-
-#### Syntax {-}
-
-[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
-
-:   This command enables PWM mode on the pin and starts switching.
-
-#### Example {-}
-
-:::{custom-style="Definition Term"}
-`LED:PWM:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
-:::
-
-## LED:PWM:OFF {.unnumbered #pwm-off}
-
-#### Syntax {-}
-
-[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
-
-:   This command disables PWM mode on the pin and goes to default pin mode.
-
-#### Example {-}
-
-:::{custom-style="Definition Term"}
-`LED:PWM::OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
-:::
 
 # I2C Subsystem {.subsection-toc}
 
@@ -1366,7 +1350,7 @@ Also returns default value when keyword parameter applied.
 
 :   Typical Response: [1]{custom-style="StringTok"}
 
-## SPI:CSEL:VALue {-}
+## SPI:CSEL:VALue {.unnumbered #spi-csel-value}
 
 #### Syntax {-}
 
@@ -1396,7 +1380,7 @@ Also returns default value when keyword parameter applied.
 
 </div>
 
-## SPI:CSEL:VALue? {-}
+## SPI:CSEL:VALue? {.unnumbered #spi-csel-value-query}
 
 #### Syntax {-}
 
@@ -1426,7 +1410,7 @@ Also returns default value when keyword parameter applied.
 
 :   Typical Response: [OFF]{custom-style=".st StringTok"}
 
-## SPI:MODE {-}
+## SPI:MODE {.unnumbered #spi-mode}
 
 #### Syntax {-}
 
@@ -1457,7 +1441,7 @@ Also returns default value when keyword parameter applied.
 
 </div>
 
-## SPI:MODE? {-}
+## SPI:MODE? {.unnumbered #spi-mode-query}
 
 #### Syntax {-}
 
@@ -1477,7 +1461,7 @@ Also returns default value when keyword parameter applied.
 
 #### Returned Query Format {-}
 
-[[\<NR1\>]{custom-style="NormalTok"}](#nr1)
+[[<code>\<NR1\></code>]{custom-style="NormalTok"}](#nr1)
 
 #### Example {-}
 
@@ -1485,7 +1469,7 @@ Also returns default value when keyword parameter applied.
 
 :   Typical Response: [2]{custom-style="StringTok"}
 
-## SPI:FREQuency {-}
+## SPI:FREQuency {.unnumbered #spi-frequency}
 
 #### Syntax {-}
 
@@ -1516,7 +1500,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 </div>
 
-## SPI:FREQuency? {-}
+## SPI:FREQuency? {.unnumbered #spi-frequency-query}
 
 #### Syntax {-}
 
@@ -1546,7 +1530,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 :   Typical Response: [5_000_000]{custom-style="StringTok"}
 
-## SPI:TRANSfer {-}
+## SPI:TRANSfer {.unnumbered #spi-transfer}
 
 #### Syntax {-}
 
@@ -1578,7 +1562,7 @@ at the same time. Also, it configures chip select pin for pre and post of data t
 
 :   Typical Response: [BE,EF]{custom-style="StringTok"}
 
-## SPI:WRITE {-}
+## SPI:WRITE {.unnumbered #spi-write}
 
 #### Syntax {-}
 
@@ -1600,7 +1584,7 @@ for pre and post of data transfer respectively.
 
 </div>
 
-## SPI:READ? {-}
+## SPI:READ? {.unnumbered #spi-read-query}
 
 #### Syntax {-}
 
@@ -1665,7 +1649,7 @@ Also, it configures chip select pin for pre and post of data transfer respective
 
 # IEEE-488.2 Common Commands {#ieee4882-common-commands .subsection-toc}
 
-## \*IDN? {.unnumbered #idn}
+## \*IDN? {.unnumbered #idn-query}
 
 #### Syntax {-}
 
