@@ -778,7 +778,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 
 #### Syntax {-}
 
-[LED:VALue \<value\>]{custom-style="ControlFlowTok"}
+[LED:VALue \<value\>|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets logical value of onboard LED.
 Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
@@ -796,9 +796,9 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                                                             | Values                                         |
-|---------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------|
-| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0/1/ON/OFF/DEFault]{custom-style="NormalTok"} |
+| Item                                  | Type                                                                               | Values                                            |
+|---------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------|
+| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1)<br>[[CPD]{custom-style="NormalTok"}](#cpd) | [0/1<br>ON/OFF/DEFault]{custom-style="NormalTok"} |
 
 </div>
 
@@ -806,9 +806,19 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 #### Syntax {-}
 
-[LED:VALue?]{custom-style="ControlFlowTok"}
+[LED:VALue? \[DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns logical value of onboard LED. Also returns default value when keyword parameter applied.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                    | Type                                    | Values                              |
+|-----------------------------------------|-----------------------------------------|-------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [DEFault]{custom-style="NormalTok"} |
+
+</div>
 
 #### Returned Query Format {-}
 
@@ -888,7 +898,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 #### Syntax {-}
 
-[LED:PWM:FREQuency?]{custom-style="ControlFlowTok"}
+[LED:PWM:FREQuency? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM frequency of onboard LED in Hz.
 Also returns minimum, default and maximum frequency when keyword parameter applied.
@@ -917,7 +927,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 #### Syntax {-}
 
-[LED:PWM:DUTY \<duty\>]{custom-style="ControlFlowTok"}
+[LED:PWM:DUTY \<duty\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM duty of onboard LED in range of 0 to 65535.
 
@@ -927,7 +937,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 | Item                                 | Type                                    | Values                                                             |
 |--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
-| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
+| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
 
 </div>
 
@@ -941,7 +951,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 #### Syntax {-}
 
-[LED:PWM:DUTY?]{custom-style="ControlFlowTok"}
+[LED:PWM:DUTY? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM duty of onboard LED in range of 1 to 65535.
 
