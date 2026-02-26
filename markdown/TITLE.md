@@ -518,7 +518,7 @@ Also returns default value when keyword parameter applied.
 
 :   This query returns status of all available pins' PWM configuration (frequency, duty).
 
-    <div class="table" width="[0.2,0.4]">
+    <div class="table" width="[0.4,0.3]">
 
     |                     Command                      |           Default value            |
     |:------------------------------------------------:|:----------------------------------:|
@@ -739,7 +739,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 
 :   This query returns all status of onboard LED (value, PWM frequency, PWM duty).
 
-    <div class="table" width="[0.2,0.4]">
+    <div class="table" width="[0.3,0.6]">
 
     |                    Command                    |           Default value            |
     |:---------------------------------------------:|:----------------------------------:|
