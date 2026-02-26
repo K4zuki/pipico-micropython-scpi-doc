@@ -191,8 +191,8 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
     |               Keyword               |           CPU frequency [Hz]            |
     |:-----------------------------------:|:---------------------------------------:|
     | [MINimum]{custom-style="NormalTok"} | [100_000_000]{custom-style="NormalTok"} |
-    | [MAXimum]{custom-style="NormalTok"} | [125_000_000]{custom-style="NormalTok"} |
-    | [DEFault]{custom-style="NormalTok"} | [264_000_000]{custom-style="NormalTok"} |
+    | [MAXimum]{custom-style="NormalTok"} | [264_000_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [125_000_000]{custom-style="NormalTok"} |
 
     </div>
 
@@ -628,8 +628,8 @@ Also sets to minimum, default or maximum duty when keyword parameter applied.
     |               Keyword               |              PWM duty              |
     |:-----------------------------------:|:----------------------------------:|
     | [MINimum]{custom-style="NormalTok"} |   [0]{custom-style="NormalTok"}    |
-    | [MAXimum]{custom-style="NormalTok"} | [32_768]{custom-style="NormalTok"} |
-    | [DEFault]{custom-style="NormalTok"} | [65_535]{custom-style="NormalTok"} |
+    | [MAXimum]{custom-style="NormalTok"} | [65_535]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [32_768]{custom-style="NormalTok"} |
 
     </div>
 
@@ -1483,8 +1483,8 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
     |               Keyword               |           PWM frequency [Hz]           |
     |:-----------------------------------:|:--------------------------------------:|
     | [MINimum]{custom-style="NormalTok"} |   [10_000]{custom-style="NormalTok"}   |
-    | [MAXimum]{custom-style="NormalTok"} | [1_000_000]{custom-style="NormalTok"}  |
-    | [DEFault]{custom-style="NormalTok"} | [10_000_000]{custom-style="NormalTok"} |
+    | [MAXimum]{custom-style="NormalTok"} | [10_000_000]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [1_000_000]{custom-style="NormalTok"}  |
 
     </div>
 
