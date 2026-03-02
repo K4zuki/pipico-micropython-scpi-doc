@@ -440,10 +440,10 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                  | Type                                                                             | Values                                                    |
-|---------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                                          | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1), [[CPD]{custom-style="NormalTok"}](#cpd) | [0/1/ON/OFF/DEFault]{custom-style="NormalTok"}            |
+| Item                                  | Type                                                                               | Values                                                    |
+|---------------------------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                                            | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1)<br>[[CPD]{custom-style="NormalTok"}](#cpd) | [0/1<br>ON/OFF/DEFault]{custom-style="NormalTok"}         |
 
 </div>
 
@@ -1455,12 +1455,12 @@ Also returns default value when keyword parameter applied.
 
     <div class="table" width="[0.15,0.15,0.15]">
 
-    |                    Mode                    | CPOL |  CPHA   |
-    |:------------------------------------------:|:----:|:-------:|
-    | **0**, [DEFault]{custom-style="NormalTok"} | Low  | Rising  |
-    |                   **1**                    | Low  | Falling |
-    |                   **2**                    | High | Rising  |
-    |                   **3**                    | High | Falling |
+    |                     Mode                     | CPOL |  CPHA   |
+    |:--------------------------------------------:|:----:|:-------:|
+    | **0**<br>[DEFault]{custom-style="NormalTok"} | Low  | Rising  |
+    |                    **1**                     | Low  | Falling |
+    |                    **2**                     | High | Rising  |
+    |                    **3**                     | High | Falling |
 
     </div>
 
