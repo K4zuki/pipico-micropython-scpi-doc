@@ -323,7 +323,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 :   This query returns status of all available pins (mode, value).
 
-    <div class="table" width="[0.2,0.4]">
+    <div class="table" width="[0.4,0.3]">
 
     |                   Command                    |          Default value          |
     |:--------------------------------------------:|:-------------------------------:|
@@ -999,7 +999,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 :   This query returns all status of I2C buses (addressing, clock frequency).
 
-    <div class="table" width="[0.2,0.4]">
+    <div class="table" width="[0.3,0.4]">
 
     |                      Command                       |            Default value            |
     |:--------------------------------------------------:|:-----------------------------------:|
@@ -1298,7 +1298,7 @@ the target I2C slave device.
 
 :   This query returns all status of SPI buses (chip select polarity, clock frequency, bus mode).
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.3,0.4]">
 
     |                       Command                        |             Default value             |
     |:----------------------------------------------------:|:-------------------------------------:|
