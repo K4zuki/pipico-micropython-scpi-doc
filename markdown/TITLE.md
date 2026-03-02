@@ -959,9 +959,10 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                 | Type                                    | Values                                                             |
-|--------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
-| [\<duty\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
+| Item                                    | Type                                    | Values                                                             |
+|-----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
+| [\<duty\>]{custom-style="NormalTok"}    | [[NR1]{custom-style="NormalTok"}](#nr1) | [0]{custom-style="NormalTok"} to [65535]{custom-style="NormalTok"} |
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"}                |
 
 </div>
 
@@ -978,6 +979,16 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 [LED:PWM:DUTY? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM duty of onboard LED in range of 1 to 65535.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                    | Type                                    | Values                                              |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------------------|
+| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd) | [MINimum/MAXimum/DEFault]{custom-style="NormalTok"} |
+
+</div>
 
 #### Returned Query Format {-}
 
