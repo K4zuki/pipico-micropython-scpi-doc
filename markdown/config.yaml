@@ -82,8 +82,19 @@ docx_coreprop:
     "Normal Table": "Centered"
   paragraph:
     "Image Caption": "Figure Caption"
-  #    "Normal": "Body Text"
-  #    "First Paragraph": "Body Text"
+    "Normal": "Body Text"
+    "First Paragraph": "Body Text"
   character:
     "Verbatim Char": "NormalTok"
+  okuzuke: # comment out if you don't want Okuzuke
+    table-style: "Centered"
+    para-style: "Table Body Center"
+    rows:
+      - "Raspberry Pi Pico as USBTMC instrument"
+      - "K4ZUKI / KY技研"
+      - "技術書典20 / 2026"
+      - |
+        Markdown x Pandoc Version 3.7 (DOCX writer)
+        with docx-coreprop-writer program
+      - "キンコーズオンラインで印刷製本"
 ...
