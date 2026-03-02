@@ -23,23 +23,47 @@ no access from the API.
 - Raspberry Pi Pico WH
 - Other third party RP2040 boards
 
-#### Installation, Question, Discussion, Contribution {-}
+#### Installation {-}
 
-Either case you need to clone repository - <https://github.com/K4zuki/pipico-micropython-scpi>.
-Shallow clone is recommended as it includes binary files.
+Two installation methods will be described here.
+Either methods case you need to clone repository - <https://github.com/K4zuki/pipico-micropython-scpi>.
+Also requires general python environment or Docker is required.
 
-##### Simple way of installation - typical Micropython method {-}
+For python environment, [mpremote]{custom-style="PreprocessorTok"} module is required.
 
+- `pip install mpremote`{.shell}
+
+See document <https://docs.micropython.org/en/latest/reference/mpremote.html#mpremote> for more details.
+
+#### Installation (1) - CDC class {-}
+
+This applies to CDC class version.
 Write official Micropython uf2 firmware (version 1.26), and put following files on root of target virtual filesystem directory.
 
-- [MicroScpiDevice.py]{custom-style="PreprocessorTok"}
-- [RaspberryScpiPico.py]{custom-style="PreprocessorTok"}
-- [Usb488ScpiPico.py]{custom-style="PreprocessorTok"}
-- [main.py]{custom-style="PreprocessorTok"},
-- [tmc.py]{custom-style="PreprocessorTok"}
-- [usb488.py]{custom-style="PreprocessorTok"}
+- [mpremote cp MicroScpiDevice.py :MicroScpiDevice.py]{custom-style="PreprocessorTok"}
+- [mpremote cp RaspberryScpiPico.py :RaspberryScpiPico.py]{custom-style="PreprocessorTok"}
 
-##### Complicated way - build custom UF2 firmware {-}
+and copy [main.py]{custom-style="PreprocessorTok"} from [cdc]{custom-style="PreprocessorTok"} directory:
+
+- [mpremote cp cdc/main.py :main.py]{custom-style="PreprocessorTok"}
+
+#### Installation (2) - TMC class {-}
+
+This applies to TMC class version. Copy main two files [MicroScpiDevice.py]{custom-style="PreprocessorTok"} and
+[RaspberryScpiPico.py]{custom-style="PreprocessorTok"} as well, plus files from [tmc]{custom-style="PreprocessorTok"} directory:
+
+- [mpremote cp MicroScpiDevice.py :MicroScpiDevice.py]{custom-style="PreprocessorTok"}
+- [mpremote cp RaspberryScpiPico.py :RaspberryScpiPico.py]{custom-style="PreprocessorTok"}
+- [mpremote cp tmc/main.py :main.py]{custom-style="PreprocessorTok"}
+- [mpremote cp tmc/Usb488ScpiPico.py :Usb488ScpiPico.py]{custom-style="PreprocessorTok"}
+- [mpremote cp tmc/tmc.py :tmc.py]{custom-style="PreprocessorTok"}
+- [mpremote cp tmc/usb488.py :usb488.py]{custom-style="PreprocessorTok"}
+
+Also you will need to install a micropython module using mpremote:
+
+- [mpremote mip install usb-core]{custom-style="PreprocessorTok"}
+
+#### Installation (3) - build custom UF2 firmware {-}
 
 Install Docker on your PC[^winpc-and-intelmac] and run [make docker]{custom-style="PreprocessorTok"} and
 [make firmware]{custom-style="PreprocessorTok"} to build docker image and uf2 firmware respectively
@@ -54,7 +78,7 @@ For any question, create an issue on github repo.
 [^winpc-and-intelmac]: Tested with Windows PCs and Intel Mac environment only.
 Either docker build or compile may fail with A1/2/3 chipset Mac and Linux.
 
-#### Pico pinout {-}
+#### Pin assignment {-}
 
 Following tables [@tbl:special-functions] and [@tbl:pico-pinout] show function assignment for Pico.
 There is also RP2040 GPIO# column applies to other third party boards.
