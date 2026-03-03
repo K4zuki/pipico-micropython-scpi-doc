@@ -210,7 +210,7 @@ This data type has an implied message terminator.
 [\<frequency\>]{custom-style="PreprocessorTok"} must be between 100MHz and 264MHz inclusive.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.3,0.5]">
 
     |               Keyword               |           CPU frequency [Hz]            |
     |:-----------------------------------:|:---------------------------------------:|
@@ -427,7 +427,7 @@ Also returns default status when keyword parameter applied.
 :   This command sets logical value of specified IO pin.
 Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.4]">
 
     |                                                  Value                                                  | Logical value |
     |:-------------------------------------------------------------------------------------------------------:|:-------------:|
@@ -542,7 +542,7 @@ Also returns default value when keyword parameter applied.
 
 :   This query returns status of all available pins' PWM configuration (frequency, duty).
 
-    <div class="table" width="[0.4,0.3]">
+    <div class="table" width="[0.4,0.4]">
 
     |                     Command                      |           Default value            |
     |:------------------------------------------------:|:----------------------------------:|
@@ -628,7 +628,7 @@ PWM25:FREQuency 1_000;PWM25:DUTY 32_768;]{custom-style="StringTok"}
 :   This command sets PWM frequency of specified IO pin in Hz.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.5]">
 
     |               Keyword               |         PWM frequency [Hz]          |
     |:-----------------------------------:|:-----------------------------------:|
@@ -695,7 +695,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 :   This command sets PWM duty of specified IO pin in range of 0 to 65535.
 Also sets to minimum, default or maximum duty when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.5]">
 
     |               Keyword               |              PWM duty              |
     |:-----------------------------------:|:----------------------------------:|
@@ -763,7 +763,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 
 :   This query returns all status of onboard LED (value, PWM frequency, PWM duty).
 
-    <div class="table" width="[0.3,0.6]">
+    <div class="table" width="[0.3,0.4]">
 
     |                    Command                    |           Default value            |
     |:---------------------------------------------:|:----------------------------------:|
@@ -807,7 +807,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 :   This command sets logical value of onboard LED.
 Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.3,0.5]">
 
     |                                                  Value                                                  | Logical value |
     |:-------------------------------------------------------------------------------------------------------:|:-------------:|
@@ -891,7 +891,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 :   This command sets PWM frequency of onboard LED in Hz.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.5]">
 
     |               Keyword               |         PWM frequency [Hz]          |
     |:-----------------------------------:|:-----------------------------------:|
@@ -1010,7 +1010,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 
 :   This query returns all status of I2C buses (addressing, clock frequency).
 
-    <div class="table" width="[0.3,0.4]">
+    <div class="table" width="[0.4,0.4]">
 
     |                      Command                       |            Default value            |
     |:--------------------------------------------------:|:-----------------------------------:|
@@ -1066,9 +1066,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 :   This command sets clock frequency of specified bus.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.3,0.5]">
 
-    |               Keyword               |         PWM frequency [Hz]          |
+    |               Keyword               |      Bus clock frequency [Hz]       |
     |:-----------------------------------:|:-----------------------------------:|
     | [MINimum]{custom-style="NormalTok"} | [10_000]{custom-style="NormalTok"}  |
     | [MAXimum]{custom-style="NormalTok"} | [400_000]{custom-style="NormalTok"} |
@@ -1133,7 +1133,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 :   This command sets addressing of specified bus.
 Also sets default value when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.4]">
 
     |                                Value                                 | Addressing |
     |:--------------------------------------------------------------------:|:----------:|
@@ -1309,7 +1309,7 @@ the target I2C slave device.
 
 :   This query returns all status of SPI buses (chip select polarity, clock frequency, bus mode).
 
-    <div class="table" width="[0.3,0.4]">
+    <div class="table" width="[0.4,0.3]">
 
     |                       Command                        |             Default value             |
     |:----------------------------------------------------:|:-------------------------------------:|
@@ -1340,7 +1340,7 @@ SPI1:CSEL:POLarity 0;SPI1:FREQuency 1_000_000;SPI1:MODE 0;]{custom-style="String
 :   This command sets chip select polarity for specified SPI bus
 Also sets default value when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.4]">
 
     |                                Value                                 | Polarity  |
     |:--------------------------------------------------------------------:|:---------:|
@@ -1404,7 +1404,7 @@ Also returns default value when keyword parameter applied.
 :   This command sets logical value of chip select pin for specified bus.
 Also returns default value when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.2,0.4]">
 
     |                                                  Value                                                  |   Bus    |
     |:-------------------------------------------------------------------------------------------------------:|:--------:|
@@ -1523,9 +1523,9 @@ Also returns default value when keyword parameter applied.
 :   This command sets bus clock frequency for specified bus.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
 
-    <div class="table" width="[0.2,0.6]">
+    <div class="table" width="[0.3,0.5]">
 
-    |               Keyword               |           PWM frequency [Hz]           |
+    |               Keyword               |        Bus clock frequency [Hz]        |
     |:-----------------------------------:|:--------------------------------------:|
     | [MINimum]{custom-style="NormalTok"} |   [10_000]{custom-style="NormalTok"}   |
     | [MAXimum]{custom-style="NormalTok"} | [10_000_000]{custom-style="NormalTok"} |
