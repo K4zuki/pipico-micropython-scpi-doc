@@ -862,7 +862,7 @@ Alias of [[PIN25:VALue?]{custom-style="StringTok"}](#pin-value-query)
 
 #### Syntax {-}
 
-[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
+[LED:PWM:ON]{custom-style="ControlFlowTok"}
 
 :   This command enables PWM mode on the pin and starts switching.
 Alias of [[PWM25:ON]{custom-style="StringTok"}](#pwm-on)
@@ -877,7 +877,7 @@ Alias of [[PWM25:ON]{custom-style="StringTok"}](#pwm-on)
 
 #### Syntax {-}
 
-[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
+[LED:PWM:OFF]{custom-style="ControlFlowTok"}
 
 :   This command disables PWM mode on the pin and goes to default pin mode.
 Alias of [[PWM25:OFF]{custom-style="StringTok"}](#pwm-off)
@@ -885,7 +885,7 @@ Alias of [[PWM25:OFF]{custom-style="StringTok"}](#pwm-off)
 #### Example {-}
 
 :::{custom-style="Definition Term"}
-`LED:PWM::OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
+`LED:PWM:OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
 :::
 
 ## LED:PWM:FREQuency {.unnumbered #led-pwm-frequency}
