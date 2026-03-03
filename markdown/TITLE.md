@@ -1694,6 +1694,18 @@ Also, it configures chip select pin for pre and post of data transfer respective
 
 :   This query returns ADC conversion value in range of 0 to 65535
 
+    <div class="table" width="[0.2,0.4]">
+
+    |            Channel            |                  Read out                   |
+    |:-----------------------------:|:-------------------------------------------:|
+    | [0]{custom-style="NormalTok"} |     [Pin 26]{custom-style="NormalTok"}      |
+    | [1]{custom-style="NormalTok"} |     [Pin 27]{custom-style="NormalTok"}      |
+    | [2]{custom-style="NormalTok"} |     [Pin 28]{custom-style="NormalTok"}      |
+    | [3]{custom-style="NormalTok"} |  VSYS/3 voltage ([@tbl:special-functions])  |
+    | [4]{custom-style="NormalTok"} | Core temperature ([@tbl:special-functions]) |
+
+    </div>
+
 #### Parameter {-}
 
 <div class="table" width="[0.22,0.23,0.55]">
