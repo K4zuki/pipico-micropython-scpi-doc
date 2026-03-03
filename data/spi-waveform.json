@@ -1,0 +1,32 @@
+{
+  signal: [
+    {
+      name: 'CS',
+      wave: '=.0...|.......|.=.',
+      data: [
+        'Pre CS',
+        'Post CS'
+      ]
+    },
+    {
+      name: 'SCLK',
+      wave: '=.0P..|..lP...|.=.'
+    },
+    {
+      name: 'MOSI | TX',
+      wave: 'z.=...|.z=....|.z.',
+      data: [
+        'data | mask   ',
+        'data | mask   '
+      ]
+    },
+    {
+      name: 'MISO | RX',
+      wave: 'z.=...|.z=....|.z.',
+      data: [
+        "data | don't care   ",
+        "data | don't care   "
+      ]
+    }
+  ]
+}
