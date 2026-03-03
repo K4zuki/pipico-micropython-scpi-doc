@@ -789,6 +789,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 [LED:ON]{custom-style="ControlFlowTok"}
 
 :   This command turns onboard LED on.
+Alias of [[PIN25:ON]{custom-style="StringTok"}](#pin-on)
 
 ## LED:OFF {.unnumbered #led-off}
 
@@ -797,6 +798,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 [LED:OFF]{custom-style="ControlFlowTok"}
 
 :   This command turns onboard LED off.
+Alias of [[PIN25:OFF]{custom-style="StringTok"}](#pin-off)
 
 ## LED:VALue {.unnumbered #led-value}
 
@@ -806,6 +808,7 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 
 :   This command sets logical value of onboard LED.
 Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is applied.
+Alias of [[PIN25:VALue]{custom-style="StringTok"}](#pin-value)
 
     <div class="table" width="[0.3,0.5]">
 
@@ -833,6 +836,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 [LED:VALue? \[DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns logical value of onboard LED. Also returns default value when keyword parameter applied.
+Alias of [[PIN25:VALue?]{custom-style="StringTok"}](#pin-value-query)
 
 #### Parameter {-}
 
@@ -861,6 +865,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 [PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
 
 :   This command enables PWM mode on the pin and starts switching.
+Alias of [[PWM25:ON]{custom-style="StringTok"}](#pwm-on)
 
 #### Example {-}
 
@@ -875,6 +880,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 [PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
 
 :   This command disables PWM mode on the pin and goes to default pin mode.
+Alias of [[PWM25:OFF]{custom-style="StringTok"}](#pwm-off)
 
 #### Example {-}
 
@@ -890,6 +896,7 @@ Also sets default value when [DEFault]{custom-style="NormalTok"} keyword is appl
 
 :   This command sets PWM frequency of onboard LED in Hz.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
+Alias of [[PWM25:FREQuency]{custom-style="StringTok"}](#pwm-frequency)
 
     <div class="table" width="[0.2,0.5]">
 
@@ -926,6 +933,7 @@ Also sets to minimum, default or maximum frequency when keyword parameter applie
 
 :   This query returns PWM frequency of onboard LED in Hz.
 Also returns minimum, default and maximum frequency when keyword parameter applied.
+Alias of [[PWM25:FREQuency?]{custom-style="StringTok"}](#pwm-frequency-query)
 
 #### Parameter {-}
 
@@ -954,6 +962,17 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 [LED:PWM:DUTY \<duty\>|MINimum|MAXimum|DEFault]{custom-style="ControlFlowTok"}
 
 :   This command sets PWM duty of onboard LED in range of 0 to 65535.
+Alias of [[PWM25:DUTY]{custom-style="StringTok"}](#pwm-duty)
+
+    <div class="table" width="[0.2,0.5]">
+
+    |               Keyword               |              PWM duty              |
+    |:-----------------------------------:|:----------------------------------:|
+    | [MINimum]{custom-style="NormalTok"} |   [0]{custom-style="NormalTok"}    |
+    | [MAXimum]{custom-style="NormalTok"} | [65_535]{custom-style="NormalTok"} |
+    | [DEFault]{custom-style="NormalTok"} | [32_768]{custom-style="NormalTok"} |
+
+    </div>
 
 #### Parameter {-}
 
@@ -979,6 +998,7 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 [LED:PWM:DUTY? \[MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This query returns PWM duty of onboard LED in range of 1 to 65535.
+Alias of [[PWM25:DUTY?]{custom-style="StringTok"}](#pwm-duty-query)
 
 #### Parameter {-}
 
