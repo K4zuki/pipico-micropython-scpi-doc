@@ -1486,12 +1486,12 @@ Also returns default value when keyword parameter applied.
 
     <div class="table" width="[0.15,0.15,0.15]">
 
-    |                     Mode                     | CPOL |  CPHA   |
-    |:--------------------------------------------:|:----:|:-------:|
-    | **0**<br>[DEFault]{custom-style="NormalTok"} | Low  | Rising  |
-    |                    **1**                     | Low  | Falling |
-    |                    **2**                     | High | Rising  |
-    |                    **3**                     | High | Falling |
+    |                   Mode                   | CPOL |  CPHA   |
+    |:----------------------------------------:|:----:|:-------:|
+    | 0<br>[DEFault]{custom-style="NormalTok"} | Low  | Rising  |
+    |                    1                     | Low  | Falling |
+    |                    2                     | High | Rising  |
+    |                    3                     | High | Falling |
 
     </div>
 
