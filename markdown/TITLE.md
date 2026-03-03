@@ -1239,7 +1239,7 @@ Stop condition is configured by \<stop\>.
 [I2C\<bus\>:READ? \<address\>,\<length\>,\<stop\>]{custom-style="ControlFlowTok"}
 
 :   This query reads \<length\> bytes of data from specified slave device on the bus.
-Stop condition is configured by \<stop\>.
+Stop condition is configured by [\<stop\>]{custom-style="ControlFlowTok"}.
 
 #### Parameter {-}
 
