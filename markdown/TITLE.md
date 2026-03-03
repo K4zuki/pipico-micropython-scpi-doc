@@ -1538,7 +1538,7 @@ Also returns default value when keyword parameter applied.
 
 #### Syntax {-}
 
-[SPI\<bus\>:FREQuency \<frequency\>|MINimum|MAXimum|DEFault]]{custom-style="ControlFlowTok"}
+[SPI\<bus\>:FREQuency \<frequency\>|MINimum|MAXimum|DEFault\]]{custom-style="ControlFlowTok"}
 
 :   This command sets bus clock frequency for specified bus.
 Also sets to minimum, default or maximum frequency when keyword parameter applied.
