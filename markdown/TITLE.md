@@ -1602,7 +1602,9 @@ Also returns minimum, default and maximum frequency when keyword parameter appli
 [SPI\<bus\>:TRANSfer \<data\>,\<pre_cs\>,\<post_cs\>]{custom-style="ControlFlowTok"}
 
 :   This command sends a stream of hexadecimal data and returns what it reads from selected slave device
-at the same time. Also, it configures chip select pin for pre and post of data transfer respectively.
+at the same time. Also, it configures chip select pin for pre and post of data transfer respectively ([@fig:svg-waveform]).
+
+![SPI waveform](images/spi-waveform.svg){width=135mm #fig:svg-waveform}
 
 #### Parameter {-}
 
@@ -1634,7 +1636,7 @@ at the same time. Also, it configures chip select pin for pre and post of data t
 [SPI\<bus\>:WRITE \<data\>,\<pre_cs\>,\<post_cs\>]{custom-style="ControlFlowTok"}
 
 :   This command sends stream of hexadecimal data into selected slave device. Also, it configures chip select pin
-for pre and post of data transfer respectively.
+for pre and post of data transfer respectively ([@fig:svg-waveform]).
 
 #### Parameter {-}
 
@@ -1656,7 +1658,7 @@ for pre and post of data transfer respectively.
 [SPI\<bus\>:READ? \<length\>,\<mask\>,\<pre_cs\>,\<post_cs\>]{custom-style="ControlFlowTok"}
 
 :   This query returns comma separated list of hexadecimal data from selected slave device.
-Also, it configures chip select pin for pre and post of data transfer respectively.
+Also, it configures chip select pin for pre and post of data transfer respectively ([@fig:svg-waveform]).
 
 #### Parameter {-}
 
