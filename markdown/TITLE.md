@@ -571,6 +571,54 @@ PWM21:FREQuency 1_000;PWM21:DUTY 32_768;
 PWM22:FREQuency 1_000;PWM22:DUTY 32_768;
 PWM25:FREQuency 1_000;PWM25:DUTY 32_768;]{custom-style="StringTok"}
 
+## PWM:ON {.unnumbered #pwm-on}
+
+#### Syntax {-}
+
+[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
+
+:   This command enables PWM mode on the pin and starts switching.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+
+</div>
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`PWM14:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
+:::
+
+## PWM:OFF {.unnumbered #pwm-off}
+
+#### Syntax {-}
+
+[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
+
+:   This command disables PWM mode on the pin and goes to default pin mode.
+
+#### Parameter {-}
+
+<div class="table" width="[0.22,0.23,0.55]">
+
+| Item                                | Type                                    | Values                                                    |
+|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
+
+</div>
+
+#### Example {-}
+
+:::{custom-style="Definition Term"}
+`PWM14:OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
+:::
+
 ## PWM:FREQuency {.unnumbered #pwm-frequency}
 
 #### Syntax {-}
@@ -704,54 +752,6 @@ Also returns minimum, default and maximum duty when keyword parameter applied.
 `PWM14:DUTY?` [// Returns Pin14 PWM duty in integer]{custom-style="CommentTok"}
 
 :   Typical Response: [32_768]{custom-style="StringTok"}
-
-## PWM:ON {.unnumbered #pwm-on}
-
-#### Syntax {-}
-
-[PWM\<pin\>:ON]{custom-style="ControlFlowTok"}
-
-:   This command enables PWM mode on the pin and starts switching.
-
-#### Parameter {-}
-
-<div class="table" width="[0.22,0.23,0.55]">
-
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-
-</div>
-
-#### Example {-}
-
-:::{custom-style="Definition Term"}
-`PWM14:ON` [// Starts PWM switching]{custom-style="CommentTok"} \
-:::
-
-## PWM:OFF {.unnumbered #pwm-off}
-
-#### Syntax {-}
-
-[PWM\<pin\>:OFF]{custom-style="ControlFlowTok"}
-
-:   This command disables PWM mode on the pin and goes to default pin mode.
-
-#### Parameter {-}
-
-<div class="table" width="[0.22,0.23,0.55]">
-
-| Item                                | Type                                    | Values                                                    |
-|-------------------------------------|-----------------------------------------|-----------------------------------------------------------|
-| [\<pin\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | [14/15/16/17/18/19/20/21/22/25]{custom-style="NormalTok"} |
-
-</div>
-
-#### Example {-}
-
-:::{custom-style="Definition Term"}
-`PWM14:OFF` [// Stops PWM switching and back to INput mode]{custom-style="CommentTok"} \
-:::
 
 # LED Subsystem {.subsection-toc}
 
