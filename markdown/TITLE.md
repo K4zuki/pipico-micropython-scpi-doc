@@ -87,15 +87,15 @@ There is also RP2040 GPIO# column applies to other third party boards.
 
 Table: API unavailable or special functioned GPIO pins {#tbl:special-functions}
 
-| RP2040<br>GPIO# | API subsystem | Note                                   |
-|:---------------:|:-------------:|----------------------------------------|
-|        0        |      NA       | No error indicator                     |
-|        1        |      NA       | Error indicator                        |
-|       23        |      NA       | (Pico) Onboard DC-DC converter control |
-|       24        |      NA       | (Pico) VBUS status readout             |
-|       25        | LED, PIN, PWM | (Pico) Onboard LED                     |
-|       29        |      ADC      | (Pico) VSYS/3 voltage readout          |
-|       NA        |      ADC      | (Pico) Core temperature readout        |
+| RP2040<br>GPIO# |                              API subsystem                              | Note                                   |
+|:---------------:|:-----------------------------------------------------------------------:|----------------------------------------|
+|        0        |                                   NA                                    | No error indicator                     |
+|        1        |                                   NA                                    | Error indicator                        |
+|       23        |                                   NA                                    | (Pico) Onboard DC-DC converter control |
+|       24        |                                   NA                                    | (Pico) VBUS status readout             |
+|       25        | [LED](#led-subsystem)<br>[PIN](#pin-subsystem)<br>[PWM](#pwm-subsystem) | (Pico) Onboard LED                     |
+|       29        |                          [ADC](#adc-subsystem)                          | (Pico) VSYS/3 voltage readout          |
+|       NA        |                          [ADC](#adc-subsystem)                          | (Pico) Core temperature readout        |
 
 :::
 
