@@ -1437,11 +1437,11 @@ Also returns default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                    | Type                                      | Values                                                                    |
-|-----------------------------------------|-------------------------------------------|---------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)   | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
-| [\<value\>]{custom-style="NormalTok"}   | [[Bool]{custom-style="NormalTok"}](#bool) | Logical value of CS pin.                                                  |
-| [\<keyword\>]{custom-style="NormalTok"} | [[CPD]{custom-style="NormalTok"}](#cpd)   | [DEFault]{custom-style="NormalTok"}                                       |
+| Item                                    | Type                                                                               | Values                                                                    |
+|-----------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr1)                                            | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<value\>]{custom-style="NormalTok"}   | [[Bool]{custom-style="NormalTok"}](#bool)                                          | Logical value of CS pin.                                                  |
+| [\<keyword\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1)<br>[[CPD]{custom-style="NormalTok"}](#cpd) | [0/1<br>ON/OFF/DEFault]{custom-style="NormalTok"}                         |
 
 </div>
 
@@ -1499,10 +1499,10 @@ Also returns default value when keyword parameter applied.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                     | Type                                    | Values                                                                                                 |
-|------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}      | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                              |
-| [\<mode\>]{.st custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus clock and phase mode<br>[0/1/2/3]{custom-style="NormalTok"} or [DEFault]{custom-style="NormalTok"} |
+| Item                                 | Type                                                                               | Values                                                                    |
+|--------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}  | [[NR1]{custom-style="NormalTok"}](#nr1)                                            | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"} |
+| [\<mode\>]{custom-style="NormalTok"} | [[NR1]{custom-style="NormalTok"}](#nr1)<br>[[CPD]{custom-style="NormalTok"}](#cpd) | [0/1/2/3<br>ON/OFF/DEFault]{custom-style="NormalTok"}                     |
 
 </div>
 
