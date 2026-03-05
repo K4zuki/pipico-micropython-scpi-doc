@@ -27,7 +27,7 @@ no access from the API.
 
 Two installation methods will be described here.
 Either methods case you need to clone repository - <https://github.com/K4zuki/pipico-micropython-scpi>.
-Also requires general python environment or Docker is required.
+Also requires general python environment and Docker is required.
 
 For python environment, [mpremote]{custom-style="PreprocessorTok"} module is required.
 
@@ -35,9 +35,9 @@ For python environment, [mpremote]{custom-style="PreprocessorTok"} module is req
 
 See document <https://docs.micropython.org/en/latest/reference/mpremote.html#mpremote> for more details.
 
-#### Installation (1) - CDC class {-}
+#### Installation (1) - CDC device {-}
 
-This applies to CDC class version.
+This applies to CDC[^usb-cdc-class] class version.
 Write official Micropython uf2 firmware (version 1.26), and put following files on root of target virtual filesystem directory.
 
 - [mpremote cp MicroScpiDevice.py :MicroScpiDevice.py]{custom-style="PreprocessorTok"}
@@ -47,9 +47,11 @@ and copy [main.py]{custom-style="PreprocessorTok"} from [cdc]{custom-style="Prep
 
 - [mpremote cp cdc/main.py :main.py]{custom-style="PreprocessorTok"}
 
-#### Installation (2) - TMC class {-}
+[^usb-cdc-class]: CDC stands for [C](.underline)ommunications [D](.underline)evice [C](.underline)lass. CDC class is known for a serial port emulation.
 
-This applies to TMC class version. Copy main two files [MicroScpiDevice.py]{custom-style="PreprocessorTok"} and
+#### Installation (2) - TMC device {-}
+
+This applies to TMC[^usb-tmc-class] class version. Copy main two files [MicroScpiDevice.py]{custom-style="PreprocessorTok"} and
 [RaspberryScpiPico.py]{custom-style="PreprocessorTok"} as well, plus files from [tmc]{custom-style="PreprocessorTok"} directory:
 
 - [mpremote cp MicroScpiDevice.py :MicroScpiDevice.py]{custom-style="PreprocessorTok"}
@@ -63,6 +65,9 @@ Also you will need to install a micropython module using mpremote:
 
 - [mpremote mip install usb-core]{custom-style="PreprocessorTok"}
 
+[^usb-tmc-class]: TMC stands for [T](.underline)est and [M](.underline)easurement [C](.underline)lass.
+TMC class is used in various measurement instrument devices such as Digital Multimeter (DMM) and Oscilloscopes.
+
 #### Installation (3) - build custom UF2 firmware {-}
 
 Install Docker on your PC[^winpc-and-intelmac] and run [make docker]{custom-style="PreprocessorTok"} and
@@ -71,7 +76,10 @@ Install Docker on your PC[^winpc-and-intelmac] and run [make docker]{custom-styl
 This builds [pipco-micropython-scpi.uf2]{custom-style="PreprocessorTok"} firmeare in build directory.
 
 WSL is recommended to use [make]{custom-style="PreprocessorTok"} on Windows i.e.
-[wsl.exe make docker]{custom-style="PreprocessorTok"} and [wsl.exe make firmware]{custom-style="PreprocessorTok"}.
+
+[wsl.exe make docker]{custom-style="PreprocessorTok"} to prepare Docker image and
+[wsl.exe make firmware]{custom-style="PreprocessorTok"} for TMC device firmware build, and/or
+[wsl.exe make firmware-cdc]{custom-style="PreprocessorTok"} for CDC device firmware, respectively.
 
 For any question, create an issue on github repo.
 
