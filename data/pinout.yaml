@@ -1,0 +1,63 @@
+# https://splitbrain.github.io/pinoutleaf/
+title: "Pico SCPI device"
+
+# dimensions counted in pins
+width: 9
+height: 20
+
+# special pins
+types:
+  control:
+    label: "System Control"
+    bgcolor: "#ffaaaa"
+    fgcolor: "#000000"
+  led:
+    label: "Indicator LED"
+    bgcolor: "#ffff00"
+    fgcolor: "#0"
+
+# Define the pins (label:type), use empty entries when offsets are needed
+pins:
+  left:
+    - [ "1", "No error(Green):led" ]
+    - [ "2", "Error(Red):led" ]
+    - [ "3", "GND:gnd" ]
+    - [ "4", "SPI0 SCK:spi" ]
+    - [ "5", "SPI0 MOSI:spi" ]
+    - [ "6", "SPI0 MISO:spi" ]
+    - [ "7", "SPI0 CS:spi" ]
+    - [ "8", "GND:gnd" ]
+    - [ "9", "I2C1 SDA:i2c" ]
+    - [ "10", "I2C1 SCL:i2c" ]
+    - [ "11", "I2C0 SDA:i2c" ]
+    - [ "12", "I2C0 SCL:i2c" ]
+    - [ "13", "GND:gnd" ]
+    - [ "14", "SPI1 SCK:spi" ]
+    - [ "15", "SPI1 MOSI:spi" ]
+    - [ "16", "SPI1 MISO:spi" ]
+    - [ "17", "SPI1 CS:spi" ]
+    - [ "18", "GND:gnd" ]
+    - [ "19", "GPIO14:gpio", "PWM14:gpio" ]
+    - [ "20", "GPIO15:gpio", "PWM15:gpio" ]
+
+  right:
+    - [ "40", "VBUS:power" ]
+    - [ "39", "VSYS:power" ]
+    - [ "38", "GND:gnd" ]
+    - [ "37", "3v3_EN:control" ]
+    - [ "36", "3V3(out):power" ]
+    - [ "35", "ADC_VREF:analog" ]
+    - [ "34", "ADC2:analog" ]
+    - [ "33", "GND:gnd", "AGND:analog" ]
+    - [ "32", "ADC1:analog" ]
+    - [ "31", "ADC0:analog" ]
+    - [ "30", "RUN:control" ]
+    - [ "29", "GPIO22:gpio", "PWM22:gpio" ]
+    - [ "28", "GND:gnd" ]
+    - [ "27", "GPIO21:gpio", "PWM21:gpio" ]
+    - [ "26", "GPIO20:gpio", "PWM20:gpio" ]
+    - [ "25", "GPIO19:gpio", "PWM19:gpio" ]
+    - [ "24", "GPIO18:gpio", "PWM18:gpio" ]
+    - [ "23", "GND:gnd" ]
+    - [ "22", "GPIO17:gpio", "PWM17:gpio" ]
+    - [ "21", "GPIO16:gpio", "PWM16:gpio" ]
