@@ -88,8 +88,12 @@ Either docker build or compile may fail with A1/2/3 chipset Mac and Linux.
 
 #### Pin assignment {-}
 
-Following tables [@tbl:special-functions] and [@tbl:pico-pinout] show function assignment for Pico.
+Following image [@fig:pico-pinout] and table [@tbl:special-functions] show function assignment for Pico.
 There is also RP2040 GPIO# column applies to other third party boards.
+
+![Pinout](images/pinout.png){width=120mm #fig:pico-pinout}
+
+\newpage
 
 ::: {.table width=[0.18,0.22,0.6]}
 
@@ -107,8 +111,7 @@ Table: API unavailable or special functioned GPIO pins {#tbl:special-functions}
 
 :::
 
-\newpage
-
+::: rmnote
 <div class="table" width="[0.25,0.15,0.1,0.1,0.15,0.25]">
 
 Table: Raspberry Pi Pico pinout and function assignment {#tbl:pico-pinout}
@@ -137,6 +140,7 @@ Table: Raspberry Pi Pico pinout and function assignment {#tbl:pico-pinout}
 | [[PIN 15]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 15]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |       15        |     20      |     21      |       16        | [[PIN 16]{custom-style="GPIOPinStyle"}](#pin-subsystem), [[PWM 16]{custom-style="GPIOPinStyle"}](#pwm-subsystem) |
 
 </div>
+:::
 
 # Parameter types
 
