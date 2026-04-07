@@ -1,5 +1,5 @@
 ---
-title: "Raspberry Pi Pico as USBTMC instrument"
+title: "Raspberry Pi Pico as USBTMC/CDC instrument"
 subtitle: K*ysight style API reference
 circle: KY技研
 author: K4ZUKI
@@ -15,7 +15,7 @@ docrevision: "1.0"
 #  - angle=0
 
 verbcolored: false
-# rmnote: false
+rmnote: true
 #toc-title: "Table of Contents"
 
 svgbob:
@@ -90,7 +90,7 @@ docx_coreprop:
     table-style: "Centered"
     para-style: "Table Body Center"
     rows:
-      - "Raspberry Pi Pico as USBTMC instrument"
+      - "Raspberry Pi Pico as USBTMC/CDC instrument"
       - "K4ZUKI / KY技研"
       - "技術書典20 / 2026"
       - |
