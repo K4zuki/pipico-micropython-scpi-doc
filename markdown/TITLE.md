@@ -1781,8 +1781,11 @@ GPIO mode and state, I2C and SPI bus clock, SPI chip select pin polarity and sta
 
 # あとがき {-}
 
-- いま25日なんですが、闇落ちことEdge of Darkness版にアップデートしてるのに、
-  **Escape from Tarkov Arena 招待がまだ来てません**。悲しすぎます。
-- Pandocの公式Dockerイメージ更新が遅れてきてるのでDOCX形式にチャレンジしてみた。`pandoc/latex`2.19版使用です。
+- 技術書典20に合わせて改版しました。PWMの操作系、SPIおよびI2Cバス操作の一部など、APIにいくらかの変更があります。
+- USBTMCクラスデバイス実装はある程度で止まってしまっています。微妙に取りこぼしが発生するなどの変な挙動をするので、安定しているCDC版をおすすめします。
+    - プルリクエストはいつでもお待ちしてます :)
+- 最近はGray Zone WarfareというFPSとARC Raidersをもっぱらよくやっています。知ってる人・やってる人、どうか声をかけてください。
+- NT京都に行ったあと花粉症らしき症状が出たが、なぜか2週間で沈静化した。鼻をかみすぎて鼻の下にかさぶたができてひどいことになってます。
+    - 薬は体重比を考えて勝手に3錠飲んでも効かなかった。
 
 \newpage
