@@ -1229,7 +1229,7 @@ Also returns default value when keyword parameter applied.
 [I2C\<bus\>:WRITE \<address\>,\<buffer\>,\<stop\>]{custom-style="ControlFlowTok"}
 
 :   This command writes list of hexadecimal to specified slave device on the bus.
-Stop condition is configured by \<stop\>.
+Stop condition is configured by [\<stop\>]{custom-style="ControlFlowTok"}.
 
 #### Parameter {-}
 
@@ -1250,7 +1250,7 @@ Stop condition is configured by \<stop\>.
 
 [I2C\<bus\>:READ? \<address\>,\<length\>,\<stop\>]{custom-style="ControlFlowTok"}
 
-:   This query reads \<length\> bytes of data from specified slave device on the bus.
+:   This query reads [\<length\>]{custom-style="ControlFlowTok"} bytes of data from specified slave device on the bus.
 Stop condition is configured by [\<stop\>]{custom-style="ControlFlowTok"}.
 
 #### Parameter {-}
@@ -1288,13 +1288,13 @@ Stop condition is configured by [\<stop\>]{custom-style="ControlFlowTok"}.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                       | Type                                                   | Values                                                                                                                                                                     |
-|--------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
-| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
-| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |
-| [\<buffer\>]{custom-style="NormalTok"}     | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                                                                                                                             |
-| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                | [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                             |
+| Item                                       | Type                                                   | Values                                                                                                                                                                                                                               |
+|--------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1)                | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                                                                            |
+| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4)                | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing)                                                           |
+| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4)                | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"} ([\<addrsize\>==1]{custom-style="NormalTok"})<br>[0000]{custom-style="NormalTok"} to [FFFF]{custom-style="NormalTok"} ([\<addrsize\>==2]{custom-style="NormalTok"}) |
+| [\<buffer\>]{custom-style="NormalTok"}     | [[\<NR4\>\[\<NR4\>\]]{custom-style="NormalTok"}](#nr4) | Stream of data                                                                                                                                                                                                                       |
+| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1)                | [1]{custom-style="NormalTok"} or [2]{custom-style="NormalTok"}                                                                                                                                                                       |
 
 </div>
 
@@ -1311,13 +1311,13 @@ the target I2C slave device.
 
 <div class="table" width="[0.22,0.23,0.55]">
 
-| Item                                       | Type                                    | Values                                                                                                                                                                     |
-|--------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                  |
-| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing) |
-| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"}                                                                                                           |
-| [\<nbytes\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr4) | 1 or larger                                                                                                                                                                |
-| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} or [2]{custom-style="NormalTok"}                                                                                                             |
+| Item                                       | Type                                    | Values                                                                                                                                                                                                                               |
+|--------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [\<bus\>]{custom-style="NormalTok"}        | [[NR1]{custom-style="NormalTok"}](#nr1) | Bus number [0]{custom-style="NormalTok"} or [1]{custom-style="NormalTok"}                                                                                                                                                            |
+| [\<address\>]{custom-style="NormalTok"}    | [[NR4]{custom-style="NormalTok"}](#nr4) | [02]{custom-style="NormalTok"} to [FC]{custom-style="NormalTok"} (8-bit addressing)<br>[01]{custom-style="NormalTok"} to [7E]{custom-style="NormalTok"} (7-bit addressing)                                                           |
+| [\<memaddress\>]{custom-style="NormalTok"} | [[NR4]{custom-style="NormalTok"}](#nr4) | [00]{custom-style="NormalTok"} to [FF]{custom-style="NormalTok"} ([\<addrsize\>==1]{custom-style="NormalTok"})<br>[0000]{custom-style="NormalTok"} to [FFFF]{custom-style="NormalTok"} ([\<addrsize\>==2]{custom-style="NormalTok"}) |
+| [\<nbytes\>]{custom-style="NormalTok"}     | [[NR1]{custom-style="NormalTok"}](#nr4) | 1 to 99                                                                                                                                                                                                                              |
+| [\<addrsize\>]{custom-style="NormalTok"}   | [[NR1]{custom-style="NormalTok"}](#nr1) | [1]{custom-style="NormalTok"} or [2]{custom-style="NormalTok"}                                                                                                                                                                       |
 
 </div>
 
