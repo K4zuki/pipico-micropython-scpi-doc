@@ -1345,7 +1345,6 @@ the target I2C slave device.
 
     |                       Command                        |             Default value             |
     |:----------------------------------------------------:|:-------------------------------------:|
-    | [SPI\<bus\>:CSEL:POLarity]{custom-style="NormalTok"} |     [0]{custom-style="NormalTok"}     |
     |   [SPI\<bus\>:FREQuency]{custom-style="NormalTok"}   | [1_000_000]{custom-style="NormalTok"} |
     |     [SPI\<bus\>:MODE]{custom-style="NormalTok"}      |     [0]{custom-style="NormalTok"}     |
 
@@ -1362,6 +1361,8 @@ the target I2C slave device.
 :   Typical Response:\
 [SPI0:CSEL:POLarity 0;SPI0:FREQuency 1_000_000;SPI0:MODE 0;
 SPI1:CSEL:POLarity 0;SPI1:FREQuency 1_000_000;SPI1:MODE 0;]{custom-style="StringTok"}
+
+<!--
 
 ## SPI:CSEL:POLarity {.unnumbered #spi-csel-polarity}
 
@@ -1426,6 +1427,8 @@ Also returns default value when keyword parameter applied.
 `SPI0:CSEL:POLarity?` [// Returns SPI0 chip select polarity]{custom-style="CommentTok"}
 
 :   Typical Response: [1]{custom-style="StringTok"}
+
+-->
 
 ## SPI:CSEL:VALue {.unnumbered #spi-csel-value}
 
